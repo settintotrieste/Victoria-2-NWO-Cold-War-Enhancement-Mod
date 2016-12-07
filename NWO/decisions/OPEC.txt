@@ -1,0 +1,25 @@
+political_decisions = {
+
+joinopec = {
+	picture = "opec"
+		potential = {
+		year = 1960
+		is_vassal = no
+		NOT = { government = proletarian_dictatorship }
+		any_owned_province = { trade_goods = petroleum }
+		NOT = { has_country_modifier = opecmember }
+			
+		}
+		allow = {
+			war = no
+			any_owned_province = { trade_goods = petroleum }
+			}
+		effect = {
+		prestige = 20
+	add_country_modifier = { name = opecmember duration = -1 }
+		}
+		ai_will_do = { 
+			factor = 1 
+			}
+	}
+}
