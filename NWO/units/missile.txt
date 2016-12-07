@@ -1,0 +1,39 @@
+#======= Modern =========
+missile = {
+	icon = 14
+	
+	type = land
+	sprite = Missile
+	active = no
+	unit_type = support
+	floating_flag = no
+	primary_culture = yes
+	#Core Abilities
+	priority = 45
+	max_strength = 3
+	default_organisation = 30
+	maximum_speed = 5.00
+	weighted_value = 10.0
+
+
+	#Building Costs
+	build_time = 120
+	# cost 4M * 100 = 0.4B
+	build_cost = {
+		aeroplanes = 13.0
+	}
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		aeroplanes = 0.2
+		weaponry = 0.2
+		fuel = 0.5
+	}
+	
+
+	#Land Abilties
+	reconnaissance = 3	attack = 16
+	defence = 1.0
+	discipline = 1.0
+	support = 2	maneuver = 1
+}

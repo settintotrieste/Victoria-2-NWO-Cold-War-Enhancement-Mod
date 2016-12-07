@@ -1,0 +1,45 @@
+#======= WW2 =========
+tank = {
+	icon = 2
+	
+	type = land
+	sprite = Tank
+	active = no
+	unit_type = cavalry
+	floating_flag = yes
+	primary_culture = yes
+	#Core Abilities
+	priority = 50
+	max_strength = 3
+	default_organisation = 40
+	maximum_speed = 4.00
+	weighted_value = 10.0
+
+
+	#Building Costs
+	build_time = 270
+	# cost c.100 per div 6M/tank - > 0.5B
+	build_cost = {
+		fuel = 10.0
+		small_arms = 10.0
+		weaponry = 23.0
+	}
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		fuel = 1.2
+		weaponry = 1
+		small_arms = 1
+	}
+	
+
+	#Land Abilties
+	reconnaissance = 1
+	attack = 16
+	defence = 8
+	discipline = 1
+	support = 0.0
+	maneuver = 1
+	siege = 0
+	
+}
