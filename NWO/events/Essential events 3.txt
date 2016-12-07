@@ -1,0 +1,1018 @@
+#Soviet influence gain in Cuba
+country_event = {
+	id = 112314
+	title = "Do we want to help in Cuba's War of Independence?"
+	desc = "The Soviet Union has a special interest in Cuba's survival as a communist Cuba in the USA's own backyard can be useful to threaten the US into agreeing into our demands... especially if we were to place nuclear bombs in Cuba."
+	picture = "sovietcubainfluence"
+	
+	
+	trigger = {
+		year = 1946
+		tag = RUS
+		government = proletarian_dictatorship
+		war = no
+		CUB = { government = proletarian_dictatorship }
+		CUB = { war_with = USA }
+		NOT = { has_country_flag = sovietaidincuba }
+
+	}
+	
+	option = {
+		name = "We shall help Cuba"
+RUS = { diplomatic_influence = { who = CUB value = 400 } }
+		set_country_flag = sovietaidincuba
+		USA = { end_war = CUB }
+		ai_chance = { factor = 1 }
+		}
+	option = {
+		name = "We should not antagonise the USA"
+		prestige = -50
+		set_country_flag = sovietaidincuba
+		ai_chance = { factor = 0 }
+		}
+}
+#Bretton Woods for USA
+country_event = {
+	id = 1300013
+	title = "Dollar Convertibility Benefits"
+	desc = "The Dollar Convertiblity of 1 USD to 1 Troy Ounce of Gold offers us much economically stability as the World now uses the American Dollar which is in turn pegged to Gold."
+	picture = "brettonwoodsusa"
+	
+	
+	trigger = {
+		year = 1946
+		has_country_flag = notapplicable
+		government = democracy
+		has_country_modifier = bretton_system
+		NOT = { has_country_flag = usabrettonwoods }
+
+	}
+	
+	option = {
+	name = "Great and have you ever thought of pegging The Dollar to moondust instead?"
+	any_owned = { limit = { trade_goods = credit } add_province_modifier = { name = bretton_woods duration = -1 } }
+		prestige = 10
+		set_country_flag = usabrettonwoods
+		}
+}
+#License Raj
+country_event = {
+	id = 1300014
+	title = "License Raj"
+	desc = "The Licence Raj or Permit Raj was the elaborate system of licences, regulations and accompanying red tape that were required to set up and run businesses in India between 1947 and 1990." 
+	picture = "licenseraj"
+	
+	trigger = {
+		year = 1946
+		government = democracy
+		tag = HND
+		NOT = { has_country_flag = licenseraj }
+
+	}
+	
+	option = {
+	name = "Let slip the dogs of Regulation"
+add_country_modifier = { name = license_raj duration = -1 } 
+		set_country_flag = licenseraj
+		social_reform = six_hours
+		social_reform = preemptive_security_actions
+		social_reform = rigid_regulations
+		social_reform = citizen_salary
+		social_reform = good_pensions
+		}
+}
+#Creditor Nation
+country_event = {
+	id = 1300015
+	title = "We are a Creditor Nation"
+	desc = "Our nation has reached a sufficient politico-economic status to be a creditor nation." 
+	picture = "world_bank"
+	
+	trigger = {
+		year = 1946
+	NOT = { government = proletarian_dictatorship }
+		is_greater_power = yes
+		treasury = 5000000
+		industry_score = 1000
+		NOT = { has_country_flag = creditornation }
+
+	}
+	
+	option = {
+	name = "Rejoice!"
+add_country_modifier = { name = creditor_nation duration = -1 } 
+		set_country_flag = creditornation
+		}
+}
+#Creditor Nation lose
+country_event = {
+	id = 1300016
+	title = "We are no longer a Creditor Nation"
+	desc = "Our nation has not reached a sufficient politico-economic status to be a creditor nation anymore." 
+	picture = "world_bank"
+	
+	trigger = {
+		year = 1946
+	NOT = { government = proletarian_dictatorship }
+	is_greater_power = no
+	has_country_flag = creditornation
+
+	}
+	
+	option = {
+	name = "NOOOOOO!"
+remove_country_modifier = creditor_nation
+		clr_country_flag = creditornation
+		}
+}
+#Rotating Chairmanship of the IMF
+country_event = {
+	id = 1300017
+	title = "Chairmanship of the IMF"
+	desc = "The Chairmanship of the IMF is rotating again. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+	trigger = {
+		year = 1946
+		NOT = { has_country_modifier = imf_chairmanship }
+		has_country_flag = imf_chairmanship
+	}
+	
+	option = {
+	name = "We had a good run."
+random_country = { limit = { AND = { NOT = { has_country_modifier = imf_chairmanship } has_country_modifier = imf_member has_country_modifier = creditor_nation } } country_event = 1300018 }
+	remove_country_modifier = imf_chairmanship
+	clr_country_flag = imf_chairmanship
+		}
+}
+#Rotating Chairmanship of the IMF - select the new leader
+country_event = {
+	id = 1300018
+	title = "Chairmanship of the IMF"
+	desc = "The Chairmanship of the IMF is rotating and the Chairmanship has come to us. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+is_triggered_only = yes
+	major = yes
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = imf_chairmanship duration = 1825 }
+set_country_flag = imf_chairmanship
+		}
+}
+#Rotating Chairmanship of the WTO
+country_event = {
+	id = 1300019
+	title = "Chairmanship of the WTO"
+	desc = "The Chairmanship of the WTO is rotating again. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+	trigger = {
+		year = 1946
+	NOT = { has_country_modifier = wto_chairmanship }
+	has_country_flag = wto_chairmanship
+	}
+	
+	option = {
+	name = "We had a good run."
+random_country = { limit = { AND = { is_greater_power = yes NOT = { has_country_modifier = wto_chairmanship } has_country_modifier = wto_member } } country_event = 1300020 }
+	remove_country_modifier = wto_chairmanship
+	clr_country_flag = wto_chairmanship
+		}
+}
+#Rotating Chairmanship of the WTO - select the new leader
+country_event = {
+	id = 1300020
+	title = "Chairmanship of the WTO"
+	desc = "The Chairmanship of the WTO is rotating and the Chairmanship has come to us. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+is_triggered_only = yes
+	major = yes
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = wto_chairmanship duration = 1825 }
+set_country_flag = wto_chairmanship
+		}
+}
+
+#Rotating Chairmanship of the IBRD
+country_event = {
+	id = 1300021
+	title = "Chairmanship of the IBRD"
+	desc = "The Chairmanship of the IBRD is rotating again. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+	trigger = {
+		year = 1946
+NOT = { has_country_modifier = ibrd_chairmanship }
+has_country_flag = ibrd_chairmanship
+	}
+	
+	option = {
+	name = "We had a good run."
+random_country = { limit = { AND = { NOT = { has_country_modifier = ibrd_chairmanship } has_country_modifier = ibrd_member has_country_modifier = creditor_nation } } country_event = 1300022 }
+	remove_country_modifier = ibrd_chairmanship
+	clr_country_flag = ibrd_chairmanship
+		}
+}
+#Rotating Chairmanship of the IBRD - select the new leader
+country_event = {
+	id = 1300022
+	title = "Chairmanship of the IBRD"
+	desc = "The Chairmanship of the IBRD is rotating and the Chairmanship has come to us. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+is_triggered_only = yes
+	major = yes
+	
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = ibrd_chairmanship duration = 1825 }
+set_country_flag = ibrd_chairmanship
+		}
+}
+
+#Rotating Chairmanships USA first - imf
+country_event = {
+	id = 1300023
+	title = "Chairmanship of the IMF"
+	desc = "The Chairmanship of the IMF is rotating and we get the first one as we are the founder. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+trigger = { 
+tag = USA
+has_country_modifier = imf_member
+NOT = { has_country_flag = imfusafirst }
+}
+	major = yes
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = imf_chairmanship duration = 1825 }
+set_country_flag = imf_chairmanship
+set_country_flag = imfusafirst
+		}
+}
+#Rotating Chairmanships USA first - WTO
+country_event = {
+	id = 1300024
+	title = "Chairmanship of the WTO"
+	desc = "The Chairmanship of the WTO is rotating and we get the first one as we are the founder. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+trigger = { 
+tag = USA
+has_country_modifier = wto_member
+NOT = { has_country_flag = wtousafirst }
+}
+	major = yes
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = wto_chairmanship duration = 1825 }
+set_country_flag = wto_chairmanship
+set_country_flag = wtousafirst
+		}
+}
+#Rotating Chairmanships USA first - IBRD
+country_event = {
+	id = 1300025
+	title = "Chairmanship of the IBRD"
+	desc = "The Chairmanship of the IBRD is rotating and we get the first one as we are the founder. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+trigger = { 
+tag = USA
+has_country_modifier = ibrd_member
+NOT = { has_country_flag = ibrdusafirst }
+}
+	major = yes
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = ibrd_chairmanship duration = 1825 }
+set_country_flag = ibrd_chairmanship
+set_country_flag = ibrdusafirst
+		}
+}
+#End of the India Office
+country_event = {
+	id = 1300026
+	title = "End of the India Office"
+	desc = "With the independence of India, the India Office is no longer necessary and its remnants will be merged with whatever that is left of the Colonial Office." 
+	picture = "indiaoffice"
+	
+trigger = { 
+tag = ENG
+NOT = { year = 1990 }
+exists = HND
+NOT = { exists = RAJ }
+NOT = { is_our_vassal = RAJ }
+NOT = { has_country_flag = indiaoffice }
+}
+	option = {
+	name = "There is no need for it anymore"
+prestige = -5
+set_country_flag = indiaoffice
+	}
+}
+#Decolonisation remove techschool
+country_event = {
+	id = 1300027
+	title = "Should we renounce our imperialism?"
+	desc = EVT_15403_DESC
+	picture = "colonialism_self_rule"
+
+	trigger = {
+		year = 1954
+		OR = { 
+AND = { tag = POR tech_school = POR_tech_school }
+AND = { tag = ENG tech_school = ENG_tech_school }
+AND = { tag = FRA tech_school = FRA_tech_school }
+AND = { tag = SPA tech_school = SPA_tech_school }
+}
+		NOT = { year = 1990 }
+		NOT = { has_country_flag = decoloniasation2 }
+
+	}
+	
+	option = {
+		name = "Yes we should"
+		tech_school = industrial_tech_school
+		prestige = -10
+		set_country_flag = decoloniasation2
+		ai_chance = { factor = 100 }
+		}
+	option = {
+name = "Of course not, what a silly idea!"
+		prestige = 10
+		set_country_flag = decoloniasation2
+		ai_chance = { factor = 0 }
+		}
+}
+
+#Rename as Vietnam
+country_event = {
+	id = 1300028
+	title = "Establishment of a united Vietnam"
+	desc = "With South Vietnam out of the way, we can now rightfully call ourselves Vietnam!"
+	picture = "nwo2_united_vietnam_under_hanoi"
+
+	trigger = {
+		war = no
+		tag = DAI
+		government = proletarian_dictatorship1
+		NOT = { FRA = { is_our_vassal = CAM } }
+		NOT = { FRA = { is_our_vassal = LUA } }
+		NOT = { exists = SVI }
+		NOT = { has_country_flag = vietnamrename }
+
+	}
+	
+	option = {
+		name = "Rejoice!"
+		government = proletarian_dictatorship
+		prestige = 10
+		set_country_flag = vietnamrename
+		}
+	}
+#SAR status
+country_event = {
+	id = 1300029
+	title = "Special Administrative Region Status"
+	desc = "$COUNTRY$'s Special Administrative Status only lasts for 50 years before we revert to direct rule by China."
+	picture = "nwo2_chinese_hongkong"
+
+	trigger = {
+		OR = { tag = HKG tag = MCA }
+		is_vassal_of = CHI
+		government = sar_government
+		NOT = { has_country_flag = endofsarstatus }
+
+	}
+	
+	option = {
+		name = "Noted"
+add_country_modifier = { name = sar_status duration = 18250 }
+		set_country_flag = endofsarstatus
+		}
+	}
+#End of SAR status
+country_event = {
+	id = 1300030
+	title = "Special Administrative Region Status"
+	desc = "$COUNTRY$'s Special Administrative Status has ended so we revert to direct rule by China."
+	picture = "macao"
+
+	trigger = {
+		OR = { tag = HKG tag = MCA }
+		is_vassal_of = CHI
+		year = 2020
+		NOT = { has_country_modifier = sar_status }
+		NOT = { has_country_flag = endofsarstatus1 }
+
+	}
+	
+	option = {
+		name = "Noted"
+		overlord = { inherit = THIS }
+		set_country_flag = endofsarstatus1
+		}
+	}
+#End of SAR status
+country_event = {
+	id = 1300031
+	title = "Special Administrative Region Status"
+	desc = "$COUNTRY$'s Special Administrative Status has ended because we are now independent."
+	picture = "macao"
+
+	trigger = {
+		OR = { tag = HKG tag = MCA }
+		is_vassal = no
+		year = 2000
+		government = sar_government
+		NOT = { has_country_flag = endofsarstatus2 }
+
+	}
+	
+	option = {
+		name = "Rejoice!"
+		government = democracy
+		remove_country_modifier = sar_status
+		set_country_flag = endofsarstatus2
+		}
+	}
+#Defcon 5
+country_event = {
+	id = 1300032
+	title = "DEFCON 5"
+	desc = "Lowest state of readiness, Normal readiness"
+	picture = "defcon"
+
+	trigger = {
+		war = no
+		crisis_exists = no
+		OR = { 
+		NOT = { has_country_modifier = defcon5 }
+		has_country_modifier = defcon1
+		has_country_modifier = defcon2
+		has_country_modifier = defcon3
+		has_country_modifier = defcon4 
+		}
+	}
+	
+	option = {
+		name = "Peace has returned"
+add_country_modifier = { name = defcon5 duration = -1 }
+remove_country_modifier = defcon1
+remove_country_modifier = defcon2
+remove_country_modifier = defcon3
+remove_country_modifier = defcon4
+		}
+	}
+#Defcon 4
+country_event = {
+	id = 1300033
+	title = "DEFCON 4"
+	desc = "Increased intelligence watch and strengthened security measures, Above normal readiness"
+	picture = "defcon"
+
+	trigger = {
+		war = no
+		involved_in_crisis = yes
+		NOT = { crisis_temperature = 90 }
+		NOT = { has_country_modifier = defcon4 }
+		}
+	
+	option = {
+		name = "Up the ante on our enemies"
+add_country_modifier = { name = defcon4 duration = -1 }
+remove_country_modifier = defcon1
+remove_country_modifier = defcon2
+remove_country_modifier = defcon3
+remove_country_modifier = defcon5
+		}
+	}
+#Defcon 3
+country_event = {
+	id = 1300034
+	title = "DEFCON 3"
+	desc = "Increase in force readiness above that required for normal readiness, Air Force ready to mobilize in 15 minutes"
+	picture = "defcon"
+
+	trigger = {
+		war = no
+		involved_in_crisis = yes
+		crisis_temperature = 90
+		NOT = { has_country_modifier = defcon3 }
+		}
+	
+	option = {
+		name = "Up the ante on our enemies"
+add_country_modifier = { name = defcon3 duration = -1 }
+remove_country_modifier = defcon1
+remove_country_modifier = defcon2
+remove_country_modifier = defcon4
+remove_country_modifier = defcon5
+		}
+	}
+#Defcon 2
+country_event = {
+	id = 1300035
+	title = "DEFCON 2"
+	desc = "Next step to nuclear war, Armed Forces ready to deploy and engage in less than 6 hours"
+	picture = "defcon"
+
+	trigger = {
+		war = yes
+		NOT = { has_country_modifier = defcon2 }
+		}
+	
+	option = {
+		name = "It's war!"
+add_country_modifier = { name = defcon2 duration = -1 }
+remove_country_modifier = defcon1
+remove_country_modifier = defcon3
+remove_country_modifier = defcon4
+remove_country_modifier = defcon5
+		}
+	}
+#Defcon 1
+country_event = {
+	id = 1300036
+	title = "DEFCON 1"
+	desc = "Nuclear war is imminent, Maximum readiness"
+	picture = "defcon"
+
+	trigger = {
+		war = yes
+		national_provinces_occupied = 0.35
+		NOT = { has_country_modifier = defcon1 }
+		}
+	
+	option = {
+		name = "Let the bombs fly!"
+add_country_modifier = { name = defcon1 duration = -1 }
+remove_country_modifier = defcon2
+remove_country_modifier = defcon3
+remove_country_modifier = defcon4
+remove_country_modifier = defcon5
+		}
+	}
+#End of the Capital of the Empire
+country_event = {
+	id = 1400012
+	title = "End of $CAPITAL$ as an imperial capital"
+	desc = "With the loss of our empire, our capital can no longer be classified as an imperial capital."
+	picture = "imperialcapital"
+
+	trigger = {
+		has_country_flag = decoloniasation2
+		NOT = { has_country_flag = impcapital }
+		}
+	
+	option = {
+		name = "We need to find a new role for our capital!"
+		prestige = -10
+		set_country_flag = impcapital
+		}
+	}
+
+#Kick out of OPEC
+country_event = {
+	id = 1400013
+	title = "We have been kicked out of OPEC"
+	desc = "The OPEC Council has deemed our membership as invalid due to 1. Either we are a vassal or 2. We do not produce oil anymore."
+	picture = "kickedoutofopec"
+
+	trigger = {
+		has_country_modifier = opecmember
+	OR = { NOT = { any_owned_province = { trade_goods = petroleum } } is_vassal = yes }
+		}
+	
+	option = {
+	name = "We need to find a way to rejoin the organisation!"
+		prestige = -10
+		remove_country_modifier = opecmember
+		}
+	}
+#Vietnamese Doi Moi
+country_event = {
+	id = 1400014
+	title = "Doi Moi"
+	desc = EVTDESC1400014
+	picture = "doimoi"
+
+	trigger = {
+		tag = DAI
+		NOT = { ruling_party_ideology = communist_social }
+		OR = { government = proletarian_dictatorship government = proletarian_dictatorship1 }
+		OR = { RUS = { NOT = { government = proletarian_dictatorship } } RUS = { ruling_party_ideology = communist_social } }
+	
+		}
+	
+	option = {
+	name = "Begin the reforms!"
+		prestige = 10
+		ruling_party_ideology = communist_social
+		ai_chance = { factor = 100 }
+			}
+	option = {
+	name = "Stop the reforms!"
+		prestige = -20
+	ai_chance = { factor = 0 }
+			}
+	}
+#Chinese Socialism with Market Characteristics
+country_event = {
+	id = 1400015
+	title = "Chinese Socialism with Market Characteristics"
+	desc = EVTDESC1400015
+	picture = "chinesemarketreforms"
+
+	trigger = {
+		tag = CHI
+		NOT = { ruling_party_ideology = communist_social }
+		OR = { government = proletarian_dictatorship government = proletarian_dictatorship1 }
+		OR = { RUS = { NOT = { government = proletarian_dictatorship } } RUS = { ruling_party_ideology = communist_social } }
+	
+		}
+	
+	option = {
+	name = "Begin the reforms!"
+		prestige = 20
+		ruling_party_ideology = communist_social
+ai_chance = { factor = 100 }
+			}
+	option = {
+	name = "Stop the reforms!"
+		prestige = -20
+	ai_chance = { factor = 0 }
+			}
+	}
+#Unification of Yemen
+country_event = {
+	id = 1400017
+	title = "Unification of Yemen"
+	desc = "With the collaspe of the USSR, South Yemen can now unite with North Yemen."
+	picture = "uniteyemen"
+
+	trigger = {
+		tag = YEM
+NOT = { has_country_flag = unite_yemen }
+SYE = { exists = yes }
+RUS = { NOT = { government = proletarian_dictatorship } }
+YEM = { NOT = { government = proletarian_dictatorship } }	
+		}
+	
+	option = {
+	name = "Unite Yemen"
+		prestige = 20
+		inherit = SYE
+		set_country_flag = unite_yemen
+			}
+		}
+#Sterling Area - join
+country_event = {
+	id = 1400018
+	title = "Part of the Sterling Area"
+	desc = EVTDESC1400018
+	picture = "sterlingarea"
+
+	trigger = {
+		NOT = { tag = ENG }
+		ENG = { is_our_vassal = THIS }
+		in_sphere = ENG
+		NOT = { has_country_modifier = sterling_area }
+		}
+	
+	option = {
+	name = "Our currency is now pegged to the Pound Sterling"
+		prestige = 10
+add_country_modifier = { name = sterling_area duration = -1 }
+		
+			}
+		}
+#Sterling Area - leave
+country_event = {
+	id = 1400019
+	title = "No longer part of the Sterling Area"
+	desc = "With our independence from the British, our currency is no longer pegged to the Pound."
+	picture = "sterlingarea"
+
+	trigger = {
+		NOT = { tag = ENG }
+		is_vassal = no
+		NOT = { in_sphere = ENG }
+		has_country_modifier = sterling_area
+			}
+	
+	option = {
+	name = "Excellent"
+		prestige = 20
+remove_country_modifier = sterling_area
+			}
+		}
+#Malayan Emergency - Begin
+country_event = {
+	id = 1400020
+	title = "The Malayan Emergency"
+	desc = EVTDESC1400020
+	picture = "malayan_emergency"
+
+	trigger = {
+		tag = MSY
+year = 1948
+is_vassal = yes
+OR = { pop_majority_ideology = socialist pop_majority_ideology = communist }
+		NOT = { year = 1990 }
+NOT = { has_country_flag = malayanemergency }
+NOT = { has_country_modifier = malayan_emergency }
+			}
+	
+	option = {
+	name = "Fight the Communists"
+		militancy = 6
+set_country_flag = malayanemergency
+add_country_modifier = { name = malayan_emergency duration = -1 }
+			}
+		}
+#Malayan Emergency - End
+country_event = {
+	id = 1400021
+	title = "End of the Malayan Emergency"
+	desc = EVTDESC1400021
+	picture = "malayan_emergency"
+
+	trigger = {
+		tag = MSY
+OR = { is_vassal = no
+NOT = { OR = { pop_majority_ideology = socialist pop_majority_ideology = communist } } }
+has_country_flag = malayanemergency
+has_country_modifier = malayan_emergency
+
+			}
+	
+	option = {
+	name = "Mission Success"
+		prestige = 10
+		militancy = -4
+remove_country_modifier = malayan_emergency
+			}
+		}
+#Gaulism
+country_event = {
+	id = 1400022
+	title = "Gaullism"
+	desc = EVTDESC1400022
+	picture = "gaullism"
+
+	trigger = {
+		tag = FRA
+NOT = { year = 1990 }
+NOT = { has_country_modifier = gaullism }
+
+			}
+	
+	option = {
+	name = "Rebuild France!"
+		prestige = 10
+		militancy = -4
+add_country_modifier = { name = gaullism duration = 10950 }
+			}
+		}
+#Laos Socialism with Market Characteristics
+country_event = {
+	id = 1400023
+	title = "New Economic Mechanism"
+	desc = EVTDESC1400023
+	picture = "laosmarketreforms"
+
+	trigger = {
+		tag = LUA
+		NOT = { ruling_party_ideology = communist_social }
+		OR = { government = proletarian_dictatorship government = proletarian_dictatorship1 }
+		OR = { RUS = { NOT = { government = proletarian_dictatorship } } RUS = { ruling_party_ideology = communist_social } }
+	
+		}
+	
+	option = {
+	name = "Begin the reforms!"
+		prestige = 20
+		ruling_party_ideology = communist_social
+ai_chance = { factor = 100 }
+			}
+	option = {
+	name = "Stop the reforms!"
+		prestige = -20
+	ai_chance = { factor = 0 }
+			}
+	}
+#Central African Empire initiation
+country_event = {
+	id = 1400024
+	title = "Coup in the Central African Republic"
+	desc = EVTDESC1400024
+	picture = "carcoup"
+
+	trigger = {
+		tag = CAR
+		government = democracy
+		is_vassal = no
+		year = 1966	
+		}
+	fire_only_once = yes
+	option = {
+	name = "Begin the coup!"
+		government = presidential_dictatorship
+		country_event = 800050
+ai_chance = { factor = 100 }
+			}
+	option = {
+	name = "Let's wait!"
+	militancy = 10
+	ai_chance = { factor = 0 }
+			}
+	}
+#Central African Empire
+country_event = {
+	id = 1400025
+	title = "Central African Empire"
+	desc = EVTDESC1400025
+	picture = "cae"
+fire_only_once = yes
+	trigger = {
+		tag = CAR
+		year = 1976
+		government = presidential_dictatorship	
+		}
+	
+	option = {
+	name = "Declare the Monarchy!"
+		government = absolute_monarchy
+militancy = 10
+prestige = 10
+add_country_modifier = { name = revolution_chaos duration = 10950 }
+ai_chance = { factor = 100 }
+			}
+	option = {
+	name = "Being President for Life is enough!"
+	ai_chance = { factor = 0 }
+			}
+	}
+#Thai instability
+country_event = {
+	id = 1400026
+	title = "Siamese coup d'état of 1947"
+	desc = EVTDESC1400026
+	picture = "thicoup"
+	fire_only_once = yes
+	trigger = {
+		tag = THI
+		year = 1947
+		NOT = { year = 1949 }
+	NOT = { has_country_modifier = revolution_chaos }
+		}
+	mean_time_to_happen = { months = 6 }
+	option = {
+	name = "Launch the Coup!"
+add_country_modifier = { name = revolution_chaos duration = 10950 }
+ai_chance = { factor = 100 }
+			}
+	option = {
+	name = "Cooperate with the Government!"
+	militancy = 8
+add_country_modifier = { name = revolution_chaos duration = 5000 }
+	money = -100000
+	ai_chance = { factor = 0 }
+			}
+	}
+#Independence of Syria
+country_event = {
+	id = 1400027
+	title = "Independence of Syria"
+	desc = EVTDESC1400027
+	picture = "syrindy"
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		year = 1946
+		FRA = { is_our_vassal = SYR }
+		SYR = { NOT = { has_country_flag = syrindy } }
+		NOT = { year = 1949 }
+		}
+	mean_time_to_happen = { months = 4 }
+	option = {
+	name = "Give Independence!"
+SYR = { set_country_flag = syrindy
+add_country_modifier = { name = post_colonial_chaos duration = 3650 } }
+release_vassal = SYR
+SYR = { government = presidential_dictatorship }
+prestige = 10
+ai_chance = { factor = 100 }
+			}
+	option = {
+	name = "Refuse Independence!"
+	SYR = { set_country_flag = syrindy }
+	SYR = { militancy = 8
+add_country_modifier = { name = revolution_chaos duration = 5000 } }
+prestige = -10
+	ai_chance = { factor = 0 }
+			}
+	}
+#Federation of Zanizibar and Tanzania
+country_event = {
+	id = 1400028
+	title = "Formation of the Tanzanian Federation?"
+	desc = EVTDESC1400028
+	picture = "nwo2_tanzania"
+	fire_only_once = yes
+	trigger = {
+		tag = ZAN
+		exists = TAN
+		TAN = { is_vassal = no }
+		ZAN = { is_vassal = no }
+	NOT = { has_country_flag = zanzitan }
+		}
+	option = {
+	name = "Accede!"
+TAN = { inherit = ZAN }
+ai_chance = { factor = 100 }
+			}
+	option = {
+	name = "Remain Independent!"
+	SYR = { set_country_flag = zanzitan }
+	prestige = 10
+	ai_chance = { factor = 0 }
+			}
+	}
+#Election of Trump aka triggering the end of the world
+country_event = {
+	id = 1400029
+	title = "Election of a populist President"
+	desc = EVTDESC1400029
+	picture = "trump"
+	trigger = {
+		tag = USA
+		ruling_party_ideology = populist
+		NOT = { has_country_flag = trump }
+		}
+	option = {
+	name = "It's time to make America Great Again!"
+	set_country_flag = trump
+			}
+	}
+#End the occupation of Ogaden
+country_event = {
+	id = 1400030
+	title = "Issue of the Occupation of the Ogaden"
+	desc = EVTDESC1400030
+	picture = "ogaden"
+	trigger = {
+		tag = ENG
+		1867 = { owned_by = ENG }
+		1866 = { owned_by = ENG }
+		1865 = { owned_by = ENG }
+		year = 1948
+		NOT = { has_country_flag = ethend }
+		}
+	option = {
+	name = "End the occupation!"
+	set_country_flag = ethend
+	prestige = 10
+	1867 = { secede_province = ETH }
+	1866 = { secede_province = ETH }
+	1865 = { secede_province = ETH }
+	ai_chance = { factor = 100 }
+			}
+	option = {
+	name = "Keep the Occupation!"
+	set_country_flag = ethend
+ENG = { diplomatic_influence = { who = ETH value = -200 } }
+	ai_chance = { factor = 0 }
+			}
+
+	}
+#Korean Unification
+country_event = {
+	id = 1400031
+	title = "Reunification of Korea"
+	desc = EVTDESC1400031
+	picture = "koreareunification"
+	trigger = {
+		tag = KOR
+		NOT = { exists = SKO }
+		NOT = { exists = NKO }
+		NOT = { has_country_flag = koreareunification }
+		}
+	option = {
+	name = "Rejoice!"
+	set_country_flag = koreareunification
+	prestige = 100
+	ai_chance = { factor = 100 }
+			}
+	}
