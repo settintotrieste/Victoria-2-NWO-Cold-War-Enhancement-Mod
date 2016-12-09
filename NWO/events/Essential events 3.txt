@@ -1057,3 +1057,22 @@ country_event = {
 remove_country_modifier = franc_area
 			}
 		}
+#Post-Industrialisation Pop Boom
+country_event = {
+	id = 1400034
+	title = "Post-Industrialisation Population Boom"
+	desc = "Industrialisaiton has brought about a higher standard of living causing a population boom."
+	picture = "postinduspopboom"
+
+	trigger = {
+	OR = { is_greater_power = yes
+	is_secondary_power = yes }
+	NOT = { has_country_flag = postindusboom }
+			}
+	
+	option = {
+	name = "Excellent"
+set_country_flag = postindusboom
+any_owned = { limit = { is_colonial = no } add_province_modifier = { name = industrial_pop_boom duration = 3650 } }
+		}
+			}

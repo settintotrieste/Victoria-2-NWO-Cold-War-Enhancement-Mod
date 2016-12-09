@@ -2,6 +2,12 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+industrial_pop_boom = {  
+social_reform_desire = 0.10
+population_growth = 0.003
+icon = 17
+}
+
 soviet_stability = {  
 non_accepted_pop_militancy_modifier = -0.50
 core_pop_militancy_modifier = -1
@@ -65,6 +71,58 @@ malayan_emergency = {
 non_accepted_pop_militancy_modifier = 0.10
 social_reform_desire = 0.30
 icon = 18
+}
+
+### Asian Infrastructure Investment Bank ###
+
+aiibhigh_gp = {
+	rich_income_modifier = -0.10
+	middle_income_modifier = -0.10
+	poor_income_modifier = -0.10
+	research_points_modifier = 0.3
+	icon = 9
+}
+
+aiibmedium_gp = {
+	rich_income_modifier = -0.05
+	middle_income_modifier = -0.05
+	research_points_modifier = 0.2
+	icon = 9
+}
+
+aiiblow_gp = {
+	rich_income_modifier = 0.10
+	middle_income_modifier = 0.10
+	research_points_modifier = 0.1
+	icon = 9
+}
+
+aiib_member = { prestige = 0.05 icon = 7 }
+
+aiib_chairmanship = { prestige = 0.10 icon = 7 }
+
+aiibhigh = {
+	loan_interest = -0.5
+	social_reform_desire = 0.20
+	poor_income_modifier = 0.20
+	research_points_modifier = 0.1
+	icon = 9
+}
+
+aiibmedium = {
+	loan_interest = -0.15
+	social_reform_desire = 0.10
+	poor_income_modifier = 0.10
+	research_points_modifier = 0.5
+	icon = 9
+}
+
+aiiblow = {
+	loan_interest = 0.25
+	social_reform_desire = 0.05
+	poor_income_modifier = -0.20
+	research_points_modifier = 0.25
+	icon = 9
 }
 
 ### Asian Development Bank ###

@@ -136,7 +136,7 @@ political_decisions = {
 					ai = yes
 				}
 				AND = {
-					NOT = { relation = { who = FRA value = 0 } }
+					relation = { who = FRA value = 0 }
 					ai = no
 				}
 			}

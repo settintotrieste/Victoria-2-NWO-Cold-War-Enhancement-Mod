@@ -89,8 +89,8 @@ party_issues = {
 		}
 
 		planned_economy1 = {
-			min_tax = 0.5
-			min_tariff = 0.80
+			min_tax = 0.9
+			min_tariff = 0.50
 			mobilisation_economy_impact = -0.25
 			factory_owner_cost = 1.5
 			rules = {
@@ -113,8 +113,8 @@ party_issues = {
 		}
 
 		planned_economy = {
-			min_tax = 0.5
-			min_tariff = 0.80
+			min_tax = 0.9
+			min_tariff = 0.50
 			mobilisation_economy_impact = -0.25
 			factory_owner_cost = -1
 			rules = {
@@ -289,7 +289,7 @@ political_reforms = {
 	}
 	internet_infrastructure = { # public_meetings
 		quality_of_service = { # no_meeting 
-			administrative_multiplier = 2	
+			administrative_multiplier = 6	
 		}
 		open_unregulated = { # yes_meeting
 			issue_change_speed = 1.0
