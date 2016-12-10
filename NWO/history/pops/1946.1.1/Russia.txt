@@ -677,7 +677,7 @@
 	capitalists = {
 		culture = russian
 		religion =  secularism 
-		size = 4037
+		size = 34511
 	 } 
 	officers = {
 		culture = russian

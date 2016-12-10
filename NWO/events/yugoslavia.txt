@@ -377,7 +377,7 @@ country_event = {
     tag = YUG
     RUS = { NOT = { government = proletarian_dictatorship } }
 	OR = { vassal_of = RUS is_vassal = no }
-	government = proletarian_dictatorship
+	OR = { government = proletarian_dictatorship government = democracy }
 	war = no
   }
 
@@ -386,10 +386,11 @@ country_event = {
   option = {
     name = EVT_8022742_A
 	any_pop = { militancy = 0.5 consciousness = 0.8 }
-	release = SLO
-	release = CRO
-	release = MAC
-	release = BOS
+	release_vassal = SLO
+	release_vassal = CRO
+	release_vassal = MAC
+	release_vassal = BOS
+	release_vassal = MON
 	random_country = { limit = { OR = { NOT = { exists = BUL } is_our_vassal = BUL } } release = BUL }
 	CRO = {	government = democracy country_event = 800054 }
 	SLO = {	government = democracy country_event = 800054 }
@@ -412,10 +413,10 @@ country_event = {
 	any_pop = { militancy = 3.0 consciousness = 2.0 }
 	change_tag = SER
 	government = democracy country_event = 800054
-	release = SLO
-	release = CRO
-	release = BOS
-	release = MAC	
+	release_vassal = SLO
+	release_vassal = CRO
+	release_vassal = BOS
+	release_vassal = MAC	
 	random_country = { limit = { OR = { NOT = { exists = BUL } is_our_vassal = BUL } } release = BUL }
 	CRO = {	government = democracy country_event = 800054 }
 	SLO = {	government = democracy country_event = 800054 }
@@ -434,7 +435,7 @@ country_event = {
 	release = SLO
 	release = CRO
 	release = BOS
-	random_country = { limit = { OR = { NOT = { exists = BUL } is_our_vassal = BUL } } release = BUL }
+	random_country = { limit = { OR = { NOT = { exists = BUL } is_our_vassal = BUL } } release_vassal = BUL }
 	CRO = {	government = democracy country_event = 800054 }
 	SLO = {	government = democracy country_event = 800054 }
 	BOS = {	government = populist_dictatorship country_event = 800050 }
