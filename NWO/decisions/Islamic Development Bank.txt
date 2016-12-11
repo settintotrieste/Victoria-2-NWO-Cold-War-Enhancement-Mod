@@ -58,9 +58,9 @@ leavetheidb = {
 	remove_country_modifier = idbhigh
 			remove_country_modifier = idbmedium
 			remove_country_modifier = idblow
-			clr_global_flag = idbhigh
-			clr_global_flag = idbmedium
-			clr_global_flag = idblow
+			clr_country_flag = idbhigh
+			clr_country_flag = idbmedium
+			clr_country_flag = idblow
 		}
 		ai_will_do = { 
 			factor = 1 
@@ -105,9 +105,9 @@ any_country = { limit = { has_country_modifier = idb_member }
 			remove_country_modifier = idbhigh
 			remove_country_modifier = idbmedium
 			remove_country_modifier = idblow
-			clr_global_flag = idbhigh
-			clr_global_flag = idbmedium
-			clr_global_flag = idblow
+			clr_country_flag = idbhigh
+			clr_country_flag = idbmedium
+			clr_country_flag = idblow
 }
 		}
 		ai_will_do = { 

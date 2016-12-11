@@ -298,6 +298,71 @@ becomearepublicire = {
 			factor = 1 
 			}
 	}
-
+formtheoecd = {
+		picture = "jointheoecd"
+		potential = {
+			tag = USA
+			is_greater_power = yes
+			government = democracy
+		NOT = { has_global_flag = oecdformed }
+		}
+		allow = {
+			war = no
+			government = democracy
+			vanguard_method = 1
+		}
+		effect = {
+			prestige = 40
+add_country_modifier = { name = oecd_member duration = -1 }
+			set_global_flag = oecdformed
+			}
+		ai_will_do = { 
+			factor = 1 
+			}
+	}
+jointheoecd = {
+		picture = "jointheoecd"
+		potential = {
+		NOT = { has_country_modifier = oecd_member }
+		has_global_flag = oecdformed
+		}
+		allow = {
+			war = no
+		OR = { government = democracy 
+government = democracy1 government = hms_government government = hms_government1 }
+		}
+		effect = {
+			prestige = 10
+add_country_modifier = { name = oecd_member duration = -1 }
+	USA = { relation = { who = THIS value = 100 } }
+USA = { diplomatic_influence = { who = THIS value = 100 } }
+		}
+		ai_will_do = { 
+			factor = 1 
+			}
+	}
+leavetheoecd = {
+		picture = "jointheoecd"
+		potential = {
+		has_country_modifier = oecd_member
+		has_global_flag = oecdformed
+		}
+		allow = {
+			war = no
+			NOT = { government = democracy }
+			NOT = { government = democracy1 }
+			NOT = { government = hms_government1 }
+			NOT = { government = hms_government }
+		}
+		effect = {
+			prestige = -10
+remove_country_modifier = oecd_member duration
+	USA = { relation = { who = THIS value = -100 } }
+USA = { diplomatic_influence = { who = THIS value = -50 } }
+		}
+		ai_will_do = { 
+			factor = 1 
+			}
+	}
 	
 }

@@ -53,14 +53,14 @@ leavetheaiib = {
 			war = no
 				}
 		effect = {
-			pretige = -20
+			prestige = -20
 	remove_country_modifier = aiib_member
 	remove_country_modifier = aiibhigh
 			remove_country_modifier = aiibmedium
 			remove_country_modifier = aiiblow
-			clr_global_flag = aiibhigh
-			clr_global_flag = aiibmedium
-			clr_global_flag = aiiblow
+			clr_country_flag = aiibhigh
+			clr_country_flag = aiibmedium
+			clr_country_flag = aiiblow
 		}
 		ai_will_do = { 
 			factor = 1 
@@ -105,9 +105,9 @@ any_country = { limit = { has_country_modifier = aiib_member }
 			remove_country_modifier = aiibhigh
 			remove_country_modifier = aiibmedium
 			remove_country_modifier = aiiblow
-			clr_global_flag = aiibhigh
-			clr_global_flag = aiibmedium
-			clr_global_flag = aiiblow
+			clr_country_flag = aiibhigh
+			clr_country_flag = aiibmedium
+			clr_country_flag = aiiblow
 }
 		}
 		ai_will_do = { 

@@ -53,14 +53,14 @@ leavetheadb = {
 			war = no
 				}
 		effect = {
-			pretige = -20
+			prestige = -20
 	remove_country_modifier = adb_member
 	remove_country_modifier = adbhigh
 			remove_country_modifier = adbmedium
 			remove_country_modifier = adblow
-			clr_global_flag = adbhigh
-			clr_global_flag = adbmedium
-			clr_global_flag = adblow
+			clr_country_flag = adbhigh
+			clr_country_flag = adbmedium
+			clr_country_flag = adblow
 		}
 		ai_will_do = { 
 			factor = 1 
@@ -105,9 +105,9 @@ any_country = { limit = { has_country_modifier = adb_member }
 			remove_country_modifier = adbhigh
 			remove_country_modifier = adbmedium
 			remove_country_modifier = adblow
-			clr_global_flag = adbhigh
-			clr_global_flag = adbmedium
-			clr_global_flag = adblow
+			clr_country_flag = adbhigh
+			clr_country_flag = adbmedium
+			clr_country_flag = adblow
 }
 		}
 		ai_will_do = { 

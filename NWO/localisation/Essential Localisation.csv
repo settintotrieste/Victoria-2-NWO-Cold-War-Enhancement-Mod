@@ -1,4 +1,25 @@
 CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;HUNGARIAN;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;;x;;;;;;;;;;;;;;;;
+demohigh_gp;High militarisation and low economic focus for the Democratic Bloc;;;;;;;;x
+demomedium_gp;Medium militarisation and medium economic focus for the Democratic Bloc;;;;;;;;x
+demolow_gp;Low militarisation and High economic focus for the Democratic Bloc;;;;;;;;x
+demohigh;High militarisation and low economic focus for the Democratic Bloc;;;;;;;;x
+demomedium;Medium militarisation and medium economic focus for the Democratic Bloc;;;;;;;;x
+demolow;Low militarisation and High economic focus for the Democratic Bloc;;;;;;;;x
+demohigh_title;High militarisation and low economic focus for the Democratic Bloc;;;;;;;;x
+demomedium_title;Medium militarisation and medium economic focus for the Democratic Bloc;;;;;;;;x
+demolow_title;Low militarisation and High economic focus for the Democratic Bloc;;;;;;;;x
+demohigh_desc;High militarisation and low economic focus for the Democratic Bloc;;;;;;;;x
+demomedium_desc;Medium militarisation and medium economic focus for the Democratic Bloc;;;;;;;;x
+demolow_desc;Low militarisation and High economic focus for the Democratic Bloc;;;;;;;;x
+changedemobloc_desc;Change focus for the Democratic Bloc;;;;;;;;x
+changedemobloc_title;Change focus for the Democratic Bloc;;;;;;;;x
+oecd_member;Member of the Organisation for Economic Co-operation and Development;;;;;;;;x
+jointheoecd_title;Join the Organisation for Economic Co-operation and Development;;;;;;;;x
+jointheoecd_desc;The Organisation for Economic Co-operation and Development (OECD) is an intergovernmental economic organisation with 35 member countries, founded in 1960 to stimulate economic progress and world trade. It is a forum of countries describing themselves as committed to democracy and the market economy, providing a platform to compare policy experiences, seeking answers to common problems, identify good practices and coordinate domestic and international policies of its members. Most OECD members are high-income economies with a very high Human Development Index (HDI) and are regarded as developed countries.;;;;;;;;x
+leavetheoecd_desc;The Organisation for Economic Co-operation and Development (OECD) is an intergovernmental economic organisation with 35 member countries, founded in 1960 to stimulate economic progress and world trade. It is a forum of countries describing themselves as committed to democracy and the market economy, providing a platform to compare policy experiences, seeking answers to common problems, identify good practices and coordinate domestic and international policies of its members. Most OECD members are high-income economies with a very high Human Development Index (HDI) and are regarded as developed countries.;;;;;;;;x
+formtheoecd_desc;The Organisation for Economic Co-operation and Development (OECD) is an intergovernmental economic organisation with 35 member countries, founded in 1960 to stimulate economic progress and world trade. It is a forum of countries describing themselves as committed to democracy and the market economy, providing a platform to compare policy experiences, seeking answers to common problems, identify good practices and coordinate domestic and international policies of its members. Most OECD members are high-income economies with a very high Human Development Index (HDI) and are regarded as developed countries.;;;;;;;;x
+leavetheoecd_title;Leave the Organisation for Economic Co-operation and Development;;;;;;;;x
+formtheoecd_title;Form the Organisation for Economic Co-operation and Development;;;;;;;;x
 keiretsu;Keiretsu Corporate Structure;;;;;;;;x
 keiretsu_desc;A keiretsu (??), literally system, series, grouping of enterprises, order of succession) is a set of companies with interlocking business relationships and shareholdings. It is a type of informal business group. The keiretsu maintained dominance over the Japanese economy for the second half of the 20th century.The member companies own small portions of the shares in each other's companies, centered on a core bank; this system helps insulate each company from stock market fluctuations and takeover attempts, thus enabling long-term planning in innovative projects.;;;;;;;;x
 soviet_stability;Soviet Stability;;;;;;;;x

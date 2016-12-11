@@ -236,12 +236,46 @@ country_event = {
 	
 	option = {
 		name = "EVT_19806_A" # EVT_19806_A;Is that good news?
+remove_country_modifier = commhigh_gp
+			remove_country_modifier = commmedium_gp
+			remove_country_modifier = commlow_gp
+			remove_country_modifier = commhigh
+			remove_country_modifier = commmedium
+			remove_country_modifier = commlow
+			clr_global_flag = commhigh
+			clr_global_flag = commmedium
+			clr_global_flag = commlow
+any_country = { limit = { has_country_modifier = communist_bloc } 
+			remove_country_modifier = commhigh
+			remove_country_modifier = commmedium
+			remove_country_modifier = commlow
+			clr_country_flag = commhigh
+			clr_country_flag = commmedium
+			clr_country_flag = commlow
+}
 		remove_country_modifier = independent_bloc
 		remove_country_modifier = communist_bloc
 		remove_country_modifier = democratic_bloc
 		remove_country_modifier = nam_bloc
 		remove_country_modifier = communist_bloc_leader
 		remove_country_modifier = democratic_bloc_leader
+			remove_country_modifier = demohigh_gp
+			remove_country_modifier = demomedium_gp
+			remove_country_modifier = demolow_gp
+			remove_country_modifier = demohigh
+			remove_country_modifier = demomedium
+			remove_country_modifier = demolow
+			clr_global_flag = demohigh
+			clr_global_flag = demomedium
+			clr_global_flag = demolow
+any_country = { limit = { has_country_modifier = democratic_bloc } 
+			remove_country_modifier = demohigh
+			remove_country_modifier = demomedium
+			remove_country_modifier = demolow
+			clr_country_flag = demohigh
+			clr_country_flag = demomedium
+			clr_country_flag = demolow
+}
 		set_country_flag = endofthecoldwar
 	}
 
