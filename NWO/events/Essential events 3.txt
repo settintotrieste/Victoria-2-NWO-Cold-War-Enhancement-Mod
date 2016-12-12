@@ -1116,3 +1116,26 @@ set_country_flag = returnofportarthur
 
 		}
 			}
+#Finished Construction of the Seikan Tunnel
+country_event = {
+	id = 1400036
+	title = "Completion of the Seikan Tunnel"
+	desc = EVTDESC1400036
+	picture = "seikan_tunnel_finish"
+
+	trigger = {
+	tag = JAP
+	1642 = { owned_by = JAP }
+	1672 = { owned_by = JAP }
+NOT = { has_country_modifier = seikan_tunnel_construction }
+any_owned_province = { NOT = { has_province_modifier = seikan_tunnel } }
+has_global_flag = seikan_tunnel
+	}
+	
+	option = {
+	name = "Tremendous!"
+prestige = 50
+1642 = { add_province_modifier = { name = seikan_tunnel duration = -1 } }
+1672 = { add_province_modifier = { name = seikan_tunnel duration = -1 } }
+		}
+			}

@@ -2,6 +2,36 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+### UN King ###
+
+king_timer = {
+prestige = 0.10
+icon = 3
+}
+
+un_king1 = {
+prestige = 0.10
+icon = 3
+}
+
+un_king2 = {
+prestige = 0.10
+icon = 3
+}
+
+### Tunnels ###
+
+seikan_tunnel_construction = {
+tax_efficiency = -0.01
+icon = 3
+}
+
+seikan_tunnel = { 
+local_factory_throughput = 0.25
+local_RGO_throughput = 0.25
+icon = 3
+}
+
 ### OECD ###
 
 oecd_member = { 
