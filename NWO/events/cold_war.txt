@@ -226,7 +226,7 @@ country_event = {
 
 	trigger = {
 		OR = { RUS = { NOT = { government = proletarian_dictatorship } } USA = { NOT = { government = democracy } } }
-		
+
 		NOT = { has_country_flag = endofthecoldwar }
 	}
 
@@ -236,6 +236,13 @@ country_event = {
 	
 	option = {
 		name = "EVT_19806_A" # EVT_19806_A;Is that good news?
+any_country = { remove_country_modifier = cold_war_high
+remove_country_modifier = cold_war_medium
+remove_country_modifier = cold_war_low }
+RUS = { 
+remove_country_modifier = cold_war_high
+remove_country_modifier = cold_war_medium
+remove_country_modifier = cold_war_low
 remove_country_modifier = commhigh_gp
 			remove_country_modifier = commmedium_gp
 			remove_country_modifier = commlow_gp
@@ -244,7 +251,7 @@ remove_country_modifier = commhigh_gp
 			remove_country_modifier = commlow
 			clr_global_flag = commhigh
 			clr_global_flag = commmedium
-			clr_global_flag = commlow
+			clr_global_flag = commlow }
 any_country = { limit = { has_country_modifier = communist_bloc } 
 			remove_country_modifier = commhigh
 			remove_country_modifier = commmedium
@@ -259,6 +266,10 @@ any_country = { limit = { has_country_modifier = communist_bloc }
 		remove_country_modifier = nam_bloc
 		remove_country_modifier = communist_bloc_leader
 		remove_country_modifier = democratic_bloc_leader
+	USA= {
+remove_country_modifier = cold_war_high
+remove_country_modifier = cold_war_medium
+remove_country_modifier = cold_war_low	
 			remove_country_modifier = demohigh_gp
 			remove_country_modifier = demomedium_gp
 			remove_country_modifier = demolow_gp
@@ -267,7 +278,7 @@ any_country = { limit = { has_country_modifier = communist_bloc }
 			remove_country_modifier = demolow
 			clr_global_flag = demohigh
 			clr_global_flag = demomedium
-			clr_global_flag = demolow
+			clr_global_flag = demolow }
 any_country = { limit = { has_country_modifier = democratic_bloc } 
 			remove_country_modifier = demohigh
 			remove_country_modifier = demomedium

@@ -334,8 +334,8 @@ government = democracy1 government = hms_government government = hms_government1
 		effect = {
 			prestige = 10
 add_country_modifier = { name = oecd_member duration = -1 }
-	USA = { relation = { who = THIS value = 100 } }
-USA = { diplomatic_influence = { who = THIS value = 100 } }
+	USA = { relation = { who = THIS value = 25 } }
+USA = { diplomatic_influence = { who = THIS value = 25 } }
 		}
 		ai_will_do = { 
 			factor = 1 

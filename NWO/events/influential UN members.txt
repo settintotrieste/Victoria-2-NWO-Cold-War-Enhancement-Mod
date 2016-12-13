@@ -13,6 +13,7 @@ country_event = {
 	option = {
 	name = "We shall make the most of it!"
 prestige = 200
+set_global_flag = unkingset
 add_country_modifier = { name = un_king1 duration = -1 }
 		}
 			}
@@ -24,6 +25,7 @@ country_event = {
 	picture = "united_nations_superpowers"
 
 	trigger = {
+	NOT = { rank = 1 }
 	rank = 2
 	NOT = { has_country_modifier = un_king2 }
 	}
@@ -50,6 +52,7 @@ country_event = {
 	option = {
 	name = "This is horrible!"
 prestige = -50
+set_global_flag = unkingset
 remove_country_modifier = un_king1
 remove_country_modifier = un_king2
 		}

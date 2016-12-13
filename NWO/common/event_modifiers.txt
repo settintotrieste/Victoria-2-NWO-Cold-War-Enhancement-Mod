@@ -2,6 +2,27 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+### Cold War Tensions Levels ###
+
+cold_war_hot = {
+icon = 16
+}
+
+cold_war_high = {
+pop_consciousness_modifier = 0.2
+icon = 16
+}
+
+cold_war_medium = {
+pop_consciousness_modifier = 0.10
+icon = 16
+}
+
+cold_war_low = {
+pop_consciousness_modifier = 0.05
+icon = 16
+}
+
 ### UN King ###
 
 king_timer = {
