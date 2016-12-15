@@ -191,6 +191,58 @@ aiiblow = {
 	icon = 9
 }
 
+### African Development Bank ###
+
+afbhigh_gp = {
+	rich_income_modifier = -0.20
+	middle_income_modifier = -0.20
+	poor_income_modifier = -0.20
+	research_points_modifier = 0.1
+	icon = 9
+}
+
+afbmedium_gp = {
+	rich_income_modifier = -0.10
+	middle_income_modifier = -0.10
+	research_points_modifier = 0.05
+	icon = 9
+}
+
+afblow_gp = {
+	rich_income_modifier = 0.05
+	middle_income_modifier = 0.05
+	research_points_modifier = 0.025
+	icon = 9
+}
+
+afb_member = { prestige = 0.05 icon = 7 }
+
+afb_chairmanship = { prestige = 0.10 icon = 7 }
+
+afbhigh = {
+	loan_interest = -0.1
+	social_reform_desire = 0.40
+	poor_income_modifier = 0.40
+	research_points_modifier = 0.075
+	icon = 9
+}
+
+afbmedium = {
+	loan_interest = -0.05
+	social_reform_desire = 0.20
+	poor_income_modifier = 0.20
+	research_points_modifier = 0.05
+	icon = 9
+}
+
+afblow = {
+	loan_interest = 0.10
+	social_reform_desire = 0.05
+	poor_income_modifier = -0.20
+	research_points_modifier = 0.025
+	icon = 9
+}
+
 ### Inter-American Development Bank ###
 
 iabhigh_gp = {

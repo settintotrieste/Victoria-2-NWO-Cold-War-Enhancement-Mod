@@ -35,7 +35,7 @@ political_decisions = {
 			#has_country_flag = trade_block_ambition 
 			NOT = { has_country_modifier = in_bankrupcy } 
 			NOT = { AND = { part_of_sphere = yes sphere_owner = { NOT = { has_country_flag = xea_ambition } } } }
-			NOT = { OR = { government = presidential_dictatorship government = nationalist_dictatorship government = populist_dictatorship government = proletarian_dictatorship } }
+			OR = { government = presidential_dictatorship government = nationalist_dictatorship government = populist_dictatorship government = proletarian_dictatorship }
 			bank_for_international_settlements = 1
 			war = no
 		}

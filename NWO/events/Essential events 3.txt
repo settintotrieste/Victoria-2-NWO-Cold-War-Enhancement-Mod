@@ -1128,7 +1128,7 @@ country_event = {
 	1642 = { owned_by = JAP }
 	1672 = { owned_by = JAP }
 NOT = { has_country_modifier = seikan_tunnel_construction }
-any_owned_province = { NOT = { has_province_modifier = seikan_tunnel } }
+NOT = { any_owned_province = { has_province_modifier = seikan_tunnel } }
 has_global_flag = seikan_tunnel
 	}
 	

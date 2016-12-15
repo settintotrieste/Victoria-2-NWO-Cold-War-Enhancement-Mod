@@ -6,6 +6,7 @@ country_event = {
 	picture = "united_nations_superpowers"
 
 	trigger = {
+	year = 1950
 	rank = 1
 	NOT = { has_country_modifier = un_king1 }
 	}
@@ -44,6 +45,7 @@ country_event = {
 	picture = "united_nations_superpowers"
 
 	trigger = {
+	year = 1950
 	NOT = { rank = 1 }
 	NOT = { rank = 2 }
 	OR = { has_country_modifier = un_king1 has_country_modifier = un_king2 }
