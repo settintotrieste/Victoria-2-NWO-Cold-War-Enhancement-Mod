@@ -71,7 +71,7 @@ country_event = {
 
 option = {
 		name = "Yes"
-random_country = { limit = { is_vassal = no NOT = { in_sphere = THIS } } diplomatic_influence = { who = THIS value = 25 } }
+random_country = { limit = { is_vassal = no is_greater_power = no NOT = { in_sphere = THIS } } diplomatic_influence = { who = THIS value = 25 } }
 		}
 option = {
 		name = "No"
