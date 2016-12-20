@@ -38,3 +38,11 @@ nv_islamic = {
 	import_cost = 100
 	culture_tech_research_bonus = -0.5
 }
+nv_meritocracy = {
+	mobilisation_economy_impact = -0.5
+	assimilation_rate = 0.1
+	global_immigrant_attract = 1
+	mobilization_impact = 0.5
+	commerce_tech_research_bonus = 0.1
+	industry_tech_research_bonus = 0.1
+}
