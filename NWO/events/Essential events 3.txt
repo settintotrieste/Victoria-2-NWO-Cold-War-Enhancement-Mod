@@ -1159,4 +1159,18 @@ country_event = {
 	set_global_flag = canalsoftheworld
 	}
 			}
+#Claim the Rockall
+country_event = {
+	id = 1400038
+	title = "The Bizarre End of the British Empire?"
+	desc = EVTDESC1400038
+	picture = "rockall2"
+
+	is_triggered_only = yes
+		
+	option = {
+name = "We welcome Rockall into the Great British Empire!"
+	any_country = { limit = { OR = { tag = IRE tag = ICL tag = DEN } } relation = { who = THIS value = -10 } }
+	}
+			}
 

@@ -11,12 +11,12 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12 
+		months = 24 
 	}
 
 option = {
 		name = "Yes"
-		years_of_research = 0.5
+		years_of_research = 0.2
 	random_country = { limit = { OR = { is_greater_power = yes is_secondary_power = yes } } relation = { who = THIS value = -50 } }
 		}
 option = {

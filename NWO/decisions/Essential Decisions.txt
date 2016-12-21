@@ -363,6 +363,5 @@ USA = { diplomatic_influence = { who = THIS value = -50 } }
 		ai_will_do = { 
 			factor = 1 
 			}
-	}
-	
+	}	
 }
