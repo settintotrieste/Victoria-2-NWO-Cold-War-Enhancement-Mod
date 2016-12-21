@@ -1139,3 +1139,24 @@ prestige = 50
 1672 = { add_province_modifier = { name = seikan_tunnel duration = -1 } }
 		}
 			}
+#Enable Canals
+country_event = {
+	id = 1400037
+	title = "Great Wonders of the World"
+	desc = EVTDESC1400037
+	picture = "canals"
+
+	trigger = {
+	ai = no
+	NOT = { has_global_flag = canalsoftheworld }
+	}
+	
+	option = {
+	name = "The wonders of the modern age!"
+	enable_canal = 1
+	enable_canal = 2
+	enable_canal = 3
+	set_global_flag = canalsoftheworld
+	}
+			}
+

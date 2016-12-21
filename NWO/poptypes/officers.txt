@@ -21,17 +21,17 @@ rebel =
 
 life_needs_income = {
 	type = military
-	weight = 1.5
+	weight = 2
 }
 
 everyday_needs_income = {
 	type = military
-	weight = 1.5
+	weight = 8
 }
 
 luxury_needs_income = {
 	type = military
-	weight = 1.5
+	weight = 16
 }
 
 everyday_needs = { 
@@ -45,7 +45,7 @@ everyday_needs = {
 	cigarettes = 0.4
 	furniture = 0.7
 	electric_gear = 0.2 
-	fuel = 1.0
+	fuel = 8.0
 	lumber = 1.2
 	fabric = 2.8
 	paper = 0.2
@@ -75,7 +75,7 @@ life_needs = {
 }
 
 luxury_needs = { 
-	fuel = 12
+	fuel = 16
 	lumber = 4
 	fabric = 8
 	paper = 1.4

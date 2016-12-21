@@ -36,7 +36,7 @@ transportship = {
 	
 	#Naval Abilties
 	hull = 1
-	gun_power = 0
-	fire_range = 0
-	evasion = 0
+	gun_power = 5
+	fire_range = 5
+	evasion = 1
 }

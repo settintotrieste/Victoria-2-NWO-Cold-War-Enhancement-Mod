@@ -16,6 +16,7 @@ trigger = {
 	DDR = { government = proletarian_dictatorship }
 	GER = { NOT = { government = proletarian_dictatorship } }
 	tag = USA
+	war = no
 	RUS = { has_country_modifier = cold_war_high }
 	USA = { has_country_modifier = cold_war_high }
 	}
@@ -112,6 +113,7 @@ country_event = {
 	major = yes
 	trigger = {
 	NOT = { has_global_flag = cwcrisis_initiated }
+	war = no
 	exists = DDR
 	exists = GER
 	RUS = { government = proletarian_dictatorship }
@@ -219,6 +221,10 @@ country_event = {
 	USA = { government = democracy }
 	NOT = { tag = RUS }
 	NOT = { tag = USA }
+	NOT = { relation = { who = RUS value = -100 } }
+	relation = { who = USA value = 150 }
+	in_sphere = no
+	is_vassal = no
 	is_greater_power = no
 	is_secondary_power = no
 	RUS = { has_country_modifier = cold_war_high }
@@ -336,6 +342,10 @@ country_event = {
 	USA = { government = democracy }
 	NOT = { tag = RUS }
 	NOT = { tag = USA }
+	NOT = { relation = { who = USA value = -100 } }
+	relation = { who = RUS value = 150 }
+	in_sphere = no
+	is_vassal = no
 	is_greater_power = no
 	is_secondary_power = no
 	RUS = { has_country_modifier = cold_war_high }

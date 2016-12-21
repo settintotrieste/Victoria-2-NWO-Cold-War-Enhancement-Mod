@@ -22,13 +22,13 @@ life_needs_income = {
 
 everyday_needs_income = {
 	type = education
-	weight = 1
+	weight = 4
 }
 
 luxury_needs_income =
 {
 	type = reforms
-	weight = 1
+	weight = 8
 }
 
 everyday_needs = { 
@@ -42,7 +42,7 @@ everyday_needs = {
 	cigarettes = 0.4
 	furniture = 0.7
 	electric_gear = 0.2 
-	fuel = 1.0
+	fuel = 6.0
 	lumber = 1.2
 	fabric = 2.8
 	paper = 0.2
