@@ -175,6 +175,7 @@ country_event = {
 
   option = {
     name = EVT_8002627_A
+	any_pop = {  consciousness = 1 }
   }
 }
 country_event = {
@@ -191,7 +192,7 @@ country_event = {
     war = no
   }
 
-  mean_time_to_happen = { months = 1  }
+  mean_time_to_happen = { months = 12  }
 
   option = {
     name = EVT_8002628_A
@@ -262,5 +263,40 @@ country_event = {
 	release_vassal = QUE 
 	create_alliance = QUE 
 	ai_chance = { factor = 0 }
+  }
+}
+country_event = {
+  id = 8002631
+  title = EVT_8002631_NAME
+  desc = EVT_8002631_DESC
+  picture = "nwo2_quebec_independence"
+  fire_only_once = yes
+  
+  trigger = {
+    tag = CAN
+    year = 1995 NOT = { year = 1996 }
+    NOT = { exists = QUE }
+    war = no
+  }
+  
+  mean_time_to_happen = { months = 10 }
+  
+  option = {
+    name = EVT_8002631_A
+	any_pop = { militancy = -1.0  consciousness = 3 }
+	ai_chance = { factor = 80 }
+  }
+
+  option = {
+    name = EVT_8002631_B
+	release = QUE 
+	create_alliance = QUE
+        76 = {
+	      secede_province = CAN
+        } 
+        2625 = {
+	      secede_province = CAN
+        } 
+	ai_chance = { factor = 20 }
   }
 }

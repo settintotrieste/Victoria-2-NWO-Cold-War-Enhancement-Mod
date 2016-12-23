@@ -45,6 +45,26 @@ fish_canned_food_factory = {
 	default_enabled = yes
 }
 
+nuclear_fuel_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 255
+	cost = 0
+	goods_cost = 
+	{
+		cement = 60 
+		machine_parts = 80 
+		other_minerals = 125 
+	}
+	time = 365
+	visibility = yes
+	onmap = yes
+
+	production_type = nuclear_fuel_factory
+	pop_build_factory = yes
+}
+
 fruit_canned_food_factory = {
 	type = factory
 	on_completion = factory

@@ -361,7 +361,7 @@ migration_chance = { # 1
 
 #general colonial migration mtth, same for all pops
 colonialmigration_chance = { # 0.25
-	factor = 0.25
+	factor = 0.05
 
 	modifier = { factor = -0.5 is_primary_culture = no }
 	group = { 

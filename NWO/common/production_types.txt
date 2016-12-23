@@ -565,6 +565,19 @@ clothes_factory = {
 	}
 }
 
+nuclear_fuel_factory = {    
+	template = factory_template
+	input_goods = {    
+		other_minerals = 48
+	} 
+	output_goods = heating_electricity
+	value = 140
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.25
+	}
+}
+
 optics_factory = {       
 	template = factory_template
 	input_goods = {    

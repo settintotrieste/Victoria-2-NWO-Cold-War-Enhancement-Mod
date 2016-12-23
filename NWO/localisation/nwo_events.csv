@@ -4,6 +4,74 @@
 ##;;;;;;;;;;;X
 # Events;;;;;;;;;;;X
 ##;;;;;;;;;;;X
+EVT_8015518_NAME;New Constitution;;;;;;;;;;X;;;;;;;
+EVT_8015518_DESC;After the approval by referendum of the new Constitution in June $YEAR$, Kenan Evren organized general elections. The secretary general of the National Security Council was general Haydar Saltik. Both he and Evren were the strong men of the regime, while the government was headed by a retired admiral, Bülend Ulusu, and included several retired military officers and a few civil servants. ;;;;;;;;;;X;;;;;;;
+EVT_8015518_A;Make a responsible transition to democracy;;;;;;;;;;X;;;;;;;
+EVT_8015519_NAME;$YEAR$ Turkish military memorandum;;;;;;;;;;X;;;;;;;
+EVT_8015519_DESC;The 1997 military memorandum refers to the decisions issued by the Turkish military leadership on a National Security Council meeting on $DATE$. This memorandum initiated the process that precipitated the resignation of Islamist prime minister Necmettin Erbakan of the Welfare Party, and the end of his coalition government.;;;;;;;;;;X;;;;;;;
+EVT_8015519_A;Stop the islamists;;;;;;;;;;X;;;;;;;
+EVT_8015519_B;Military involvemnt in politics should stop;;;;;;;;;;X;;;;;;;
+EVT_8006226_NAME;Macedonian naming dispute;;;;;;;;;;X;;;;;;;
+EVT_8006226_DESC;The issue of the name of the Former Yugoslav Republic of Macedonia is not just a dispute over historical facts or symbols. FYROM shows no respect for good neighbourly relations, sovereignty and territorial integrity. The name issue is thus a problem with regional and international dimensions, consisting in the promotion of irredentist and territorial ambitions on the part of the Former Yugoslav Republic of Macedonia, mainly through the counterfeiting of history and usurpation of Greece’s national, historical and cultural heritage.;;;;;;;;;;X;;;;;;;
+EVT_8006226_A;Demand an end to their irrendentalist policies;;;;;;;;;;X;;;;;;;
+EVT_8006226_B;Never mind. Let them name them selves Macedons;;;;;;;;;;X;;;;;;;
+EVT_8006227_NAME;Macedonian naming dispute;;;;;;;;;;X;;;;;;;
+EVT_8006227_DESC;$FROMCOUNTRY$ demands that we change name and remove irrendentalist claims in our constitution. They ignore that Slavs have been living there (Macedonia) for a period of 1,400 years. What is more natural than that the Balkanised Slavs who have lived so long and continuously in Macedonia should be called Macedonians and their language Macedonian;;;;;;;;;;X;;;;;;;
+EVT_8006227_A;Accept a compromice. Change our constitution;;;;;;;;;;X;;;;;;;
+EVT_8006227_B;No. Risk war with Greece;;;;;;;;;;X;;;;;;;
+EVT_8006228_NAME;$FROMCOUNTRY$ refuses to change name;;;;;;;;;;X;;;;;;;
+EVT_8006228_DESC;$FROMCOUNTRY$ refuses to change name and give up irrendentalist claims. FYROM shows no respect for good neighbourly relations, sovereignty and territorial integrity. The name issue is thus a problem with regional and international dimensions, consisting in the promotion of irredentist and territorial ambitions on the part of the Former Yugoslav Republic of Macedonia, mainly through the counterfeiting of history and usurpation of Greece’s national, historical and cultural heritage.;;;;;;;;;;X;;;;;;;
+EVT_8006228_A;Shall we go to war?;;;;;;;;;;X;;;;;;;
+EVT_8010518_NAME;Nigerian Civil War;;;;;;;;;;X;;;;;;;
+EVT_8010518_DESC;Since independance Christian governments have dominated the country at the federal level, while the Muslim-dominated Northern Nigerian states have implemented strict Sharia law. Religious conflict between Muslims and Christians has erupted several times for various reasons, often causing riots with several thousands of victims on both sides. The christian hold of federal power has now been broken and many in the south now demands autonomy fearing muslim opression.;;;;;;;;;;X;;;;;;;
+EVT_8010518_A;Give the south autonomy;;;;;;;;;;X;;;;;;;
+EVT_8010518_B;Defend the unity of Nigeria;;;;;;;;;;X;;;;;;;
+EVT_8010519_NAME;End of Nigeria;;;;;;;;;;X;;;;;;;
+EVT_8010519_DESC;In the end, the christian rebels in the south managed to turn their guerilla fighters into well-organized army and the conflict ended in our complete defeat. We have no choice but to accept this fact and agree to Biafran demands of independence. Many now doubt whether Nigeria could survive as a unified state and many ethnic groups in our country are beginning to be disillusioned with the idea of a unfied Nigeria.;;;;;;;;;;X;;;;;;;
+EVT_8010519_A;Become Arewa;;;;;;;;;;X;;;;;;;
+EVT_8010519_B;Nigeria is not dead;;;;;;;;;;X;;;;;;;
+EVT_9005_NAME;Ozone layer: $YEAR$ Montreal Protocol;;;;;;;;;;;;;x
+EVT_9005_DESC;The Montreal Protocol on Substances that Deplete the Ozone Layer is an international treaty designed to protect the ozone layer by phasing out the production of numerous substances that are responsible for ozone depletion. ;;;;;;;;;;;;;x
+EVT_9005_A;An excellent example of sience guided policy;;;;;;;;;;;;;x
+EVT_9006_NAME;Climate Change: $YEAR$ Kyoto Protocol;;;;;;;;;;;;;x
+EVT_9006_DESC;The Kyoto Protocol is an international treaty which extends the 1992 United Nations Framework Convention on Climate Change (UNFCCC) that commits State Parties to reduce greenhouse gas emissions, based on the premise that (a) global warming exists and (b) human-made CO2 emissions have caused it.;;;;;;;;;;;;;x
+EVT_9006_A;We must fight global warming;;;;;;;;;;;;;x
+EVT_9006_B;We have other priorities;;;;;;;;;;;;;x
+EVT_9007_NAME;Climate Change:Paris Agreement $YEAR$;;;;;;;;;;;;;x
+EVT_9007_DESC;The Paris Agreement is an agreement within the United Nations Framework Convention on Climate Change (UNFCCC) dealing with greenhouse gases emissions mitigation, adaptation and finance starting in the year 2020.;;;;;;;;;;;;;x
+EVT_9007_A;We must fight global warming;;;;;;;;;;;;;x
+EVT_9007_B;We have other priorities;;;;;;;;;;;;;x
+EVT_9008_NAME;Climate Change: IPCC;;;;;;;;;;;;;x
+EVT_9008_DESC;Intergovernmental Panel on Climate Change set up to coordinate scientific research, by two United Nations organizations, the World Meteorological Organization and the United Nations Environment Programme (UNEP) to assess the "risk of human-induced climate change".;;;;;;;;;;;;;x
+EVT_9008_A;Good, we need more knowledge;;;;;;;;;;;;;x
+EVT_8228101_NAME;$YEAR$ South Vietnamese coup;;;;;;;;;;X;;;;;;;
+EVT_8228101_DESC;A group of Army of the Republic of Vietnam officers who disagreed with his handling of both the Buddhist crisis and the Viet Cong threat to the regime as staged a coup to oust our legitimate president Diem.;;;;;;;;;;X;;;;;;;
+EVT_8228101_A;Seek support against the coup makers;;;;;;;;;;X;;;;;;;
+EVT_8228101_B;Handle the coup on our own;;;;;;;;;;X;;;;;;;
+EVT_8228102_NAME;$YEAR$ South Vietnamese coup;;;;;;;;;;X;;;;;;;
+EVT_8228102_DESC;In $FOMCOUNTRY$ a group of Army of the Republic of Vietnam officers who disagreed with his handling of both the Buddhist crisis and the Viet Cong threat to the regime as staged a coup to oust Diem. The president has requested our support to subdue the coup makers.;;;;;;;;;;X;;;;;;;
+EVT_8228102_A;Request our security service to back the coup makers;;;;;;;;;;X;;;;;;;
+EVT_8228102_B;Support the regime in Saigon;;;;;;;;;;X;;;;;;;
+EVT_8228103_NAME;$YEAR$ South Vietnamese coup fails;;;;;;;;;;X;;;;;;;
+EVT_8228103_DESC;With $FROMCOUNTRY_ADJ$ support, the coup was crushed.;;;;;;;;;;X;;;;;;;
+EVT_8228103_A;Good;;;;;;;;;;X;;;;;;;
+EVT_8228104_NAME;$YEAR$ South Vietnamese coup succeeds;;;;;;;;;;X;;;;;;;
+EVT_8228104_DESC;With covert support form $FROMCOUNTRY_ADJ$ the copu makers have succeded in ousting president Diem. Finaly Diem's pro-Catholic policies that antagonized many Buddhists will end.;;;;;;;;;;X;;;;;;;
+EVT_8228104_A;Maybe the situation will improve now;;;;;;;;;;X;;;;;;;
+EVT_8003837_NAME;Death of Fidel Castro;;;;;;;;;;X;;;;;;;
+EVT_8003837_DESC;Castro told the Communist Party: I'll be 90 years old soon. Soon, I'll be like all the others. The time will come for all of us, but the ideas of the Cuban communists will remain as proof on this planet that if they are worked at with fervour and dignity, they can produce the material and cultural goods that human beings need, and we need to fight without truce to obtain them. Now the time has come. Castro has died.;;;;;;;;;;X;;;;;;;
+EVT_8003837_A;A great revolutionary has left us;;;;;;;;;;X;;;;;;;
+EVT_8008100_NAME;Death of Islam Karimov;;;;;;;;;;;;;x
+EVT_8008100_DESC;Thousands of people lined the streets of Tashkent for Karimov's funeral procession, throwing flowers at the cortege, as he was taken to the airport to be flown to his native Samarkand, where he was buried.;;;;;;;;;;;;;x
+EVT_8008100_A;The founder of our nation has past away;;;;;;;;;;;;;x
+EVT_8002016_NAME;Brazilian constitutional referendum;;;;;;;;;;X;;;;;;;
+EVT_8002016_DESC;The $YEAR$ Brazilian constitutional referendum was held on $DATE$, $YEAR$ to determine the form of government of the country. After the re-democratization of Brazil, an article in the new Constitution determined the holding of a referendum for voters to decide if the country should have a republican or a monarchical form of Government;;;;;;;;;;X;;;;;;;
+EVT_8002016_A;Remain a Republic;;;;;;;;;;X;;;;;;;
+EVT_8002016_B;Long live the Empire;;;;;;;;;;X;;;;;;;
+EVT_8002631_NAME;Referendum for independence of Quebec 1995;;;;;;;;;;X;;;;;;;
+EVT_8002631_DESC;The 1995 Quebec referendum was the second referendum to ask voters in the Canadian province of Quebec whether Quebec should proclaim national sovereignty and become an independent country, with the condition precedent of offering a political and economic agreement to Canada. The culmination of multiple years of debate and planning after the failure of the Meech Lake and Charlottetown constitutional accords, the referendum was launched solely by the provincial Parti Québécois government of Jacques Parizeau. Historically, the proposal to pursue secession was defeated by a very close 50.58 percent for the no vote to 49.42 percent for the yes vote margin.;;;;;;;;;;X;;;;;;;
+EVT_8002631_A;Unionists prevailed;;;;;;;;;;X;;;;;;;
+EVT_8002631_B;Separatist voters majority! Vive le Québec libre!;;;;;;;;;;X;;;;;;;
 EVT_8011700_NAME;Insurgency in Portuguese Angola;;;;;;;;;;X
 EVT_8011700_DESC;On February 4, 1961, using arms largely captured from Portuguese soldiers and police 250 MPLA guerrillas attacked the São Paulo fortress prison and police headquarters in Luanda in an attempt to free what it termed 'political prisoners'. The attack was unsuccessful, and no prisoners were released, but seven Portuguese policemen and forty Angolans were killed, mostly MPLA insurgents. Portuguese authorities responded with a sweeping counterinsurgency response in which over 5,000 Angolans were arrested, and a Portuguese mob raided the musseques (shanty towns) of Luanda, killing several dozen Angolans in the process.;;;;;;;;;;X
 EVT_8011700_A;Crush the terrorists! Angola is Portugal!;;;;;;;;;;X
