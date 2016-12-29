@@ -2,6 +2,134 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+### Nuclear War ###
+
+recently_attacked_nuke = {
+icon = 18
+}
+
+nukes_used_recently = {
+icon = 18
+}
+
+nuclear_cap_high = {
+prestige = 0.1
+icon = 18
+}
+nuclear_cap_medium = {
+prestige = 0.05
+icon = 18
+}
+nuclear_cap_low = {
+prestige = 0.025
+icon = 18
+}
+
+air_bomb = {
+tax_efficiency = -0.02
+icon = 18
+}
+sub_bomb = {
+tax_efficiency = -0.04
+icon = 18
+}
+icbm_bomb = {
+tax_efficiency = -0.06
+icon = 18
+}
+
+develop_atomic_bomb = {
+tax_efficiency = -0.01
+icon = 18
+}
+
+develop_hydrogen_bomb = {
+tax_efficiency = -0.02
+icon = 18
+}
+
+atomic_nation = {
+min_military_spending = 0.10
+icon = 18
+}
+
+hydrogen_nation = {
+min_military_spending = 0.20
+icon = 18
+}
+
+nuke_heavy = {
+immigrant_push = 10
+population_growth = -0.50
+immigrant_attract = -1
+pop_militancy_modifier = 0.5
+local_RGO_throughput = -0.75
+local_factory_output = -0.90
+icon = 18
+}
+
+nuke_medium = {
+immigrant_push = 5
+population_growth = -0.25
+immigrant_attract = -1
+pop_militancy_modifier = 0.25
+local_RGO_throughput = -0.50
+local_factory_output = -0.60
+icon = 18
+}
+
+nuke_low = {
+immigrant_push = 2.5
+population_growth = -0.125
+immigrant_attract = -1
+pop_consciousness_modifier = 0.125
+local_RGO_throughput = -0.25
+local_factory_output = -0.30
+icon = 18
+}
+
+nuke_fallout = {
+icon = 18
+}
+
+##### Integration #####
+
+integration_refusal = {
+	assimilation_rate = -0.1
+	immigrant_attract = -0.1
+	pop_militancy_modifier = -0.02
+	icon = 7
+}
+
+core_integration = {
+	assimilation_rate = 0.1
+	pop_consciousness_modifier = 0.05
+	non_accepted_pop_consciousness_modifier = 0.01
+	icon = 7
+}
+
+national_assimilation = {
+	assimilation_rate = 0.1
+	icon = 7
+}
+
+national_assimilation_rejection = {
+	assimilation_rate = -0.2
+	immigrant_attract = -0.1
+	pop_militancy_modifier = 0.1
+	non_accepted_pop_militancy_modifier = 0.01
+	icon = 18
+}
+
+national_assimilation_acceptance = {
+	pop_consciousness_modifier = 0.05
+	non_accepted_pop_consciousness_modifier = 0.01
+	icon = 17
+}
+
+national_assimilation_complete = {
+	icon = 7
+}
 
 ### Espionage ###
 
@@ -710,30 +838,6 @@ political_reform_desire = 0.05
 research_points_modifier = 0.10
 icon = 7 
 }
-
-
-### Nuclear War ###
-
-nuclear_nation = {
-icon = 7
-}
-
-nuke_heavy = {
-icon = 18
-}
-
-nuke_medium = {
-icon = 18
-}
-
-nuke_low = {
-icon = 18
-}
-
-nuke_fallout = {
-icon = 18
-}
-
 
 ### Defcon ###
 
@@ -2327,10 +2431,6 @@ leave_sco_pact = {
 non_proliferation_treaty = {
 	prestige = 0.001
 	icon = 7
-}
-develop_atomic_bomb = {
-	prestige = -0.001
-	icon = 16
 }
 has_the_atomic_bomb = {
 	prestige = -0.001

@@ -1,4 +1,40 @@
 CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;HUNGARIAN;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;;x;;;;;;;;;;;;;;;;
+recently_attacked_nuke;Second Strike Opportunity;;;;;;;;x
+nukes_used_recently;Recently used Nuclear Weapons;;;;;;;;x
+nukes_used_recently_desc;We need more time before we can launch another nuclear attack.;;;;;;;;x
+nuclear_second_strike_high_title;Launch a Second Strike;;;;;;;;x
+nuclear_second_strike_high_desc;Since we have been attacked with nuclear weapons, we must retaliate to protect the policy of Mutually Assured Destruction.;;;;;;;;x
+nuclear_second_strike_medium_title;Launch a Second Strike;;;;;;;;x
+nuclear_second_strike_medium_desc;Since we have been attacked with nuclear weapons, we must retaliate to protect the policy of Mutually Assured Destruction.;;;;;;;;x
+nuclear_second_strike_low_title;Launch a Second Strike;;;;;;;;x
+nuclear_second_strike_low_desc;Since we have been attacked with nuclear weapons, we must retaliate to protect the policy of Mutually Assured Destruction.;;;;;;;;x
+nuclear_cap_high;Massive Nuclear Attack Capability;;;;;;;;x
+nuclear_cap_medium;Moderate Nuclear Attack Capability;;;;;;;;x
+nuclear_cap_low;Modest Nuclear Attack Capability;;;;;;;;x
+nuclear_ultimatum_title;Give our enemies the Nuclear Ultimatum;;;;;;;;x
+nuclear_ultimatum_desc;This allows us to demand peace from our enemies with a small risk of Nuclear Armageddon.;;;;;;;;x
+reset_bomb_title;Reset our Nuclear Delivery Options;;;;;;;;x
+reset_bomb_title;Reset our Nuclear Delivery Options;;;;;;;;x
+reset_bomb_title;Reset our Nuclear Delivery Options;;;;;;;;x
+reset_bomb_desc;Reset our Nuclear Delivery Options to create new nuclear delivery layouts.;;;;;;;;x
+atomic_nation;Nation that possesses Atomic Weapons;;;;;;;;x
+atomic_nation;Nation that possesses Atomic Weapons;;;;;;;;x
+hydrogen_nation;Nation that possesses Thermonuclear Weapons;;;;;;;;x
+sub_bomb_title;Acquire Submarine Nuclear Delivery Means;;;;;;;;x
+air_bomb_title;Acquire Bomber Nuclear Delivery Means;;;;;;;;x
+icbm_bomb_title;Acquire ICBM Nuclear Delivery Means;;;;;;;;x
+sub_bomb_desc;Acquire Submarine Nuclear Delivery Means;;;;;;;;x
+air_bomb_desc;Acquire Bomber Nuclear Delivery Means;;;;;;;;x
+icbm_bomb_desc;Acquire ICBM Nuclear Delivery Means;;;;;;;;x
+sub_bomb;Possess Submarine Nuclear Delivery Means;;;;;;;;x
+air_bomb;Possess Bomber Nuclear Delivery Means;;;;;;;;x
+icbm_bomb;Possess ICBM Nuclear Delivery Means;;;;;;;;x
+develop_the_atomic_bomb_title;Develop the Atomic Bomb;;;;;;;;x
+develop_the_atomic_bomb_desc;Develop the Atomic Bomb;;;;;;;;x
+develop_the_hydrogen_bomb_title;Develop the Hydrogen Bomb;;;;;;;;x
+develop_the_hydrogen_bomb_desc;Develop the Hydrogen Bomb;;;;;;;;x
+develop_atomic_bomb;Developing the Atomic Bomb;;;;;;;;x
+develop_hydrogen_bomb;Developing the Hydrogen Bomb;;;;;;;;x
 EVTDESC1400038;By authority of Her Majesty Queen Elizabeth II, by the Grace of God of the United Kingdom of Great Britain and Northern Ireland and of her other realms and territories Queen, Head of the Commonwealth, Defender of the Faith, and in accordance with Her Majesty's instructions dated the 14th day of September, 1955, a landing was effected this day upon this island of Rockall from HMS Vidal. The Union flag was hoisted and possession of the island was taken in the name of Her Majesty. [Signed] R H Connell, Captain, HMS Vidal, 18 September 1955.;;;;;;;;x
 claimrockall_title;Claim Rockall;;;;;;;;x
 claimrockall_desc;The initial incentive was the test-firing of the UK's first guided nuclear weapon, the American-made Corporal missile. The missile was to be launched from South Uist and over the North Atlantic. The Ministry of Defence was concerned that the unclaimed island would provide an opportunity for the Soviet Union to spy on the test. Consequently, in April 1955 a request was sent to the Admiralty to seize the island and declare UK sovereignty lest it become an outpost for foreign observers.;;;;;;;;x

@@ -7,6 +7,14 @@
 EVT_8015518_NAME;New Constitution;;;;;;;;;;X;;;;;;;
 EVT_8015518_DESC;After the approval by referendum of the new Constitution in June $YEAR$, Kenan Evren organized general elections. The secretary general of the National Security Council was general Haydar Saltik. Both he and Evren were the strong men of the regime, while the government was headed by a retired admiral, Bülend Ulusu, and included several retired military officers and a few civil servants. ;;;;;;;;;;X;;;;;;;
 EVT_8015518_A;Make a responsible transition to democracy;;;;;;;;;;X;;;;;;;
+EVT_8014524_NAME;South Sudanese Civil War;;;;;;;;;;;;;x;;;;
+EVT_8014524_DESC;In December 2013, a political power struggle broke out between President Kiir and his former deputy Riek Machar. The president accused Mr. Machar and ten others of attempting a coup d'etat. Machar denied trying to start a coup and fled, calling for Kiir to resign. Fighting broke out between the SPLM and the SPLM – in opposition, igniting the civil war. ;;;;;;;;;;;;;x;;;;
+EVT_8014524_A;Subdue the rebells;;;;;;;;;;;;;x;;;;
+EVT_8014524_B;Find a compromise;;;;;;;;;;;;;x;;;;
+EVT_8007700_NAME;Jewish settlements;;;;;;;;;;X;;;;;;;
+EVT_8007700_DESC;The entire historic Land of Israel is the inalienable heritage of the Jewish people, and that no part of the West Bank should be handed over to foreign rule. Shall we work out a a plan for large-scale settlement in the West Bank meant to prevent a Palestinian state in order to safeguarde the security and future of the jewish people?;;;;;;;;;;X;;;;;;;
+EVT_8007700_A;Settlement in the West Bank will prevent a Palestinain state;;;;;;;;;;X;;;;;;;
+EVT_8007700_B;No, this leads to conflict.;;;;;;;;;;X;;;;;;;
 EVT_8015519_NAME;$YEAR$ Turkish military memorandum;;;;;;;;;;X;;;;;;;
 EVT_8015519_DESC;The 1997 military memorandum refers to the decisions issued by the Turkish military leadership on a National Security Council meeting on $DATE$. This memorandum initiated the process that precipitated the resignation of Islamist prime minister Necmettin Erbakan of the Welfare Party, and the end of his coalition government.;;;;;;;;;;X;;;;;;;
 EVT_8015519_A;Stop the islamists;;;;;;;;;;X;;;;;;;
