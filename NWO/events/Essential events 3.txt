@@ -22,7 +22,7 @@ country_event = {
 RUS = { diplomatic_influence = { who = CUB value = 400 } }
 		set_country_flag = sovietaidincuba
 		USA = { end_war = CUB }
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 100 }
 		}
 	option = {
 		name = "We should not antagonise the USA"
@@ -1085,7 +1085,7 @@ country_event = {
 
 	trigger = {
 	tag = RUS
-	year = 1950
+	year = 1955
 	1481 = { owned_by = RUS }
 	NOT = { year = 1990 }
 	RUS = { government = proletarian_dictatorship }

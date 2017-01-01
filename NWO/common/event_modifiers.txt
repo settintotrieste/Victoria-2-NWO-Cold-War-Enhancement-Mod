@@ -4,6 +4,10 @@
 
 ### Nuclear War ###
 
+nuke_sanctions = {
+icon = 18
+}
+
 recently_attacked_nuke = {
 icon = 18
 }
@@ -140,7 +144,7 @@ icon = 16
 
 spy_medium = {
 global_assimilation_rate = -0.1
-non_accepted_pop_militancy_modifier = 0.1
+non_accepted_pop_militancy_modifier = 0.01
 ruling_party_support = 0.2
 icon = 16
 }

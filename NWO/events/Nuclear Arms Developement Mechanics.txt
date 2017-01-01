@@ -5,7 +5,7 @@ country_event = {
 	desc = "We have finally developed a working atomic bomb!"
 	picture = "atomic_bomb"
 	
-	
+	major = yes
 	trigger = {
 	has_country_flag = atomic_bomb_developed
 	NOT = { has_country_modifier = develop_atomic_bomb }
@@ -25,7 +25,7 @@ country_event = {
 	title = "We have become an Hydrogen Bomb Nation!"
 	desc = "We have finally developed a working hydrogen bomb!"
 	picture = "hydrogen_bomb"
-	
+	major = yes
 	
 	trigger = {
 	has_country_flag = hydrogen_bomb_developed
@@ -62,6 +62,9 @@ remove_country_modifier = develop_atomic_bomb
 remove_country_modifier = develop_hydrogen_bomb  
 clr_country_flag = atomic_bomb_developed
 clr_country_flag = hydrogen_bomb_developed
+remove_country_modifier = icbm_bomb
+remove_country_modifier = sub_bomb
+remove_country_modifier = air_bomb
 prestige = -50
 		}
 	}
@@ -162,4 +165,91 @@ add_country_modifier = { name = nuclear_cap_low duration = -1 }
 remove_country_modifier = nuclear_cap_high
 remove_country_modifier = nuclear_cap_medium
 		}
+	}
+
+#### Disarm Spherelings of the Bomb ###
+country_event = {
+	id = 1231438
+	title = "Sphere Leader demands that we relinquish our Nuclear Bombs!"
+	desc = "Hostile sphere leader demands that we disarm ourselves of our nuclear weapons to reduce our threat to them."
+	picture = "nuclear_disarmament_sphere"
+	
+	
+	trigger = {
+OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nation }
+
+NOT = { sphere_owner = { relation = { who = THIS value = 0 } } }
+war = no
+in_sphere = THIS
+is_greater_power = no
+	}
+	
+	option = {
+name = "Accept"
+sphere_owner = { relation = { who = THIS value = 100 } } 
+remove_country_modifier = hydrogen_nation 
+remove_country_modifier = atomic_nation
+remove_country_modifier = develop_atomic_bomb 
+remove_country_modifier = develop_hydrogen_bomb  
+clr_country_flag = atomic_bomb_developed
+clr_country_flag = hydrogen_bomb_developed
+remove_country_modifier = icbm_bomb
+remove_country_modifier = sub_bomb
+remove_country_modifier = air_bomb
+prestige = -50
+		}
+
+option = {
+name = "Reject"
+sphere_owner = { relation = { who = THIS value = -100 } } 
+add_country_modifier = { name = nuke_sanctions duration = -1 }
+prestige = 20
+		}
+
+	}
+#### Disarm Spherelings of the Bomb ###
+country_event = {
+	id = 1231439
+	title = "$COUNTRY$ Opts to disarm its Nuclear Weapons!"
+	desc = "$COUNTRY$ has backed down due to santions and has opted to rid itself of nuclear weapons to end the sanctions."
+	picture = "nuclear_disarmament_sphere"
+	
+is_triggered_only = yes
+	major = yes
+	option = {
+name = "A victory for our enemies"
+		}
+	}
+#### Disarm Spherelings of the Bomb remove sanctions ###
+country_event = {
+	id = 1231440
+	title = "Sphere Leader no longer demands Nuclear Disarmament"
+	desc = "Due to the changing nature of relations between our two nations, they no longer demand nuclear disarmament."
+	picture = "nuclear_disarmament_sphere_lose"
+	
+	
+	trigger = {
+
+OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nation }
+
+OR = { 
+
+NOT = { in_sphere = THIS } 
+
+AND = { sphere_owner = { relation = { who = THIS value = 150 } } in_sphere = THIS } 
+
+}
+
+war = no
+has_country_modifier = nuke_sanctions
+is_greater_power = no
+
+	}
+	
+option = {
+name = "Great!"
+remove_country_modifier = nuke_sanctions
+prestige = 20
+		}
+
 	}

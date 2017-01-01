@@ -930,6 +930,11 @@
 		religion =  hindu 
 		size = 44994
 	 } 
+	bureaucrats = {
+		culture = indian
+		religion =  hindu 
+		size = 44994
+	 } 
 	aristocrats = {
 		culture = indian
 		religion = secularism

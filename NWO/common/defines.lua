@@ -618,7 +618,7 @@ pops = {
 
 	ASSIMILATION_SCALE = 0.002, -- TODO
 	CONVERSION_SCALE = 0.002,
-	IMMIGRATION_SCALE = 0.004,
+	IMMIGRATION_SCALE = 0.002,
 
 	PROMOTION_SCALE = 0.0025,
 	PROMOTION_ASSIMILATION_CHANCE = 0.001,
@@ -659,12 +659,12 @@ pops = {
 	MIL_TO_JOIN_REBEL = 7, -- Rebels over this will join a faction
 	MIL_TO_JOIN_RISING = 8, -- Rebels over this will join a general rising
 	MIL_TO_AUTORISE = 9, -- Rebels over this rise no matter what
-	REDUCTION_AFTER_RISEING = 0, -- After a pop spawns a rebellion, its militancy will be reduced this much
+	REDUCTION_AFTER_RISEING = 1, -- After a pop spawns a rebellion, its militancy will be reduced this much
 	REDUCTION_AFTER_DEFEAT = 9.0, -- After a rebellion is being defeated in combat, its pop militancy will be divided by this number.
 																-- (if value < 1.0, the MIL will be increased) (Beware! value must be > 0)
-	INVENTION_IMPACT_ON_DEMAND = 0.05, -- how much each invention in a country increases demand for a product in percent
+	INVENTION_IMPACT_ON_DEMAND = 0.10, -- how much each invention in a country increases demand for a product in percent
 	POP_TO_LEADERSHIP = 0.0001, -- how much leadership every 1000 officers gives each day.
-	ARTISAN_MIN_PRODUCTIVITY = 2, -- Minimum efficieny of an artisan
+	ARTISAN_MIN_PRODUCTIVITY = 4, -- Minimum efficieny of an artisan
 	SLAVE_GROWTH_DIVISOR = 0.05, -- Slaves have N times lower growth
 	
 	MIL_HIT_FROM_CONQUEST = 4, -- how much militancy grows in a province if taken without being core.
@@ -713,11 +713,11 @@ ai = {
 	PEACE_WAR_DIRECTION_FACTOR = 1.0, -- AI willingness to peace based on who's making gains in the war
 	PEACE_WAR_DIRECTION_WINNING_MULT = 5.0, -- Multiplies AI emphasis on war direction if it's the one making gains
 	PEACE_FORCE_BALANCE_FACTOR = 0.5, -- AI willingness to peace based on strength estimation of both sides
-	PEACE_ALLY_BASE_RELUCTANCE_MULT = 2.0, -- Multiplies PEACE_BASE_RELUCTANCE for allies in a war
+	PEACE_ALLY_BASE_RELUCTANCE_MULT = 8.0, -- Multiplies PEACE_BASE_RELUCTANCE for allies in a war
 	PEACE_ALLY_TIME_MULT = 1.0, -- Multiplies PEACE_TIME_FACTOR for allies in a war
 	PEACE_ALLY_WAR_EXHAUSTION_MULT = 1.0, -- Multiplies PEACE_WAR_EXHAUSTION_FACTOR for allies in a war
-	PEACE_ALLY_WAR_DIRECTION_MULT = 0, -- Multiplies PEACE_WAR_DIRECTION_FACTOR for allies in a war
-	PEACE_ALLY_FORCE_BALANCE_MULT = 0, -- Multiplies PEACE_FORCE_BALANCE_FACTOR for allies in a war
+	PEACE_ALLY_WAR_DIRECTION_MULT = 1, -- Multiplies PEACE_WAR_DIRECTION_FACTOR for allies in a war
+	PEACE_ALLY_FORCE_BALANCE_MULT = 1, -- Multiplies PEACE_FORCE_BALANCE_FACTOR for allies in a war
 	AGGRESSION_BASE = 1, -- general AI aggression
 	AGGRESSION_UNCIV_BONUS = 20, -- additional AI civ aggression against uncivs
 	FLEET_SIZE = 10, -- AI will attempt to keep fleets of roughly this size (fewer fleets generally results in more competent naval AI)

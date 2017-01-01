@@ -39,7 +39,7 @@ nv_islamic = {
 	culture_tech_research_bonus = -0.5
 }
 nv_meritocracy = {
-	mobilisation_economy_impact = -0.5
+	mobilisation_economy_impact = -1.5
 	assimilation_rate = 0.1
 	global_immigrant_attract = 1
 	mobilization_impact = 0.5
