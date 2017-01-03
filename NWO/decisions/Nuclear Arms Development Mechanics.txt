@@ -18,7 +18,6 @@ part_of_sphere = no
 allow = {
 
 election = no
-OR = { is_greater_power = yes AND = { war_policy = jingoism NOT = { government = democracy } NOT = { government = hms_government } NOT = { government = sar_government } NOT = { government = hms_government1 } NOT = { government = democracy1 } } }
 
 OR = { 
 AND = { tag = RUS ai = yes year = 1945 }
@@ -35,6 +34,13 @@ money = 2000000
 NOT = { has_country_modifier = alliance_nato }
 NOT = { has_country_modifier = warsaw_pact }
 NOT = { has_country_modifier = non_proliferation_treaty }
+NOT = { government = democracy }
+NOT = { government = democracy1 }
+NOT = { government = hms_government }
+NOT = { government = hms_government1 }
+NOT = { government = sar_government }
+NOT = { government = colonial_government }
+war_policy = jingoism
 }
 
 }

@@ -4,6 +4,47 @@
 ##;;;;;;;;;;;X
 # Events;;;;;;;;;;;X
 ##;;;;;;;;;;;X
+EVT_8009512_B;Continue to hunt down the ELZN rebels (Increases militancy) ;;;;;;;;;;X;;;;;;;
+EVT_8014731_NAME;The Fertile Crescent Plan;;;;;;;;;;;;;x;;;;
+EVT_8014731_DESC;The Fertile Crescent Plan was an Iraqi Hashemite proposal for the union of the Kingdom of Iraq with Mandatory Syria, Mandatory Lebanon, Mandatory Palestine, and Transjordan. Nuri as-Said, prime minister of Iraq, presented the plan to British officials during World War II, when it appeared that France had become too weak to hold on to Syria. The plan faced opposition from various groups within Syria including the National Party which didn't want wish to live under a monarchy or enter a pro-British alliance while other factions such as the People's Pary favoured it, the plan never came into fruition as a result of this opposition and any faint hope remaining for the Fertile Crescent Plan ended with the overthrow of the Iraqi monarchy in July 1958. However aspirations to unite the Fertile Crescent states continue to exist.;;;;;;;;;;;;;x;;;;
+EVT_8014731_A;Implement the Plan in agreement with Jordan.;;;;;;;;;;;;;x;;;;
+EVT_8014731_B;Abandon the Fertile Crescent plan;;;;;;;;;;;;;x;;;;
+EVT_8014732_NAME;Iraq requests Jordan to implement the Fertile Crescent Plan;;;;;;;;;;;;;x;;;;
+EVT_8014732_DESC;Iraq a fellow Hashemite monarchy has requested us to join in with them in implementing the Fertile Crescent Plan, if we accept this request, our aspirations of  a Greater Syria under our rule may materialise, however it depends on whether Syria accepts or rejects our proposal, if they reject it, it may just put a quick end to the Fertile Crescent Plan.;;;;;;;;;;;;;x;;;;
+EVT_8014732_A;Request Syria to accept the Fertile Crescent Plan and unify with Jordan.;;;;;;;;;;;;;x;;;;
+EVT_8014732_B;Ignore Iraqs' request.;;;;;;;;;;;;;x;;;;
+EVT_8014733_NAME;Syria in the Fertile Crescent Plan;;;;;;;;;;;;;x;;;;
+EVT_8014733_DESC;Jordan in accordance with the Fertile Crescent Plan has requested us to unify with them to reform the Kingdom of Syyria that was dissolved in 1920 after the French enforced their rule in Syria. Our country's population is very polarised towards the plan with some in the Northern cities like Aleppo favouring it while others in the South in scoff at the though of being ruled by a monarchy and under a British influenced alliance.;;;;;;;;;;;;;x;;;;
+EVT_8014733_A;Accept the Request from Jordan.;;;;;;;;;;;;;x;;;;
+EVT_8014733_B;Reject the Fertile Crescent Plan.;;;;;;;;;;;;;x;;;;
+EVT_8014734_NAME;The rebirth of the Kingdom of Syria;;;;;;;;;;;;;x;;;;
+EVT_8014734_DESC;Syria has accepted our request and son we will unify with Syria to reform the Kingdom of Syria according to the Fertile Crescent Plan.;;;;;;;;;;;;;x;;;;
+EVT_8014734_A;Recreate the Kingdom of Syria.;;;;;;;;;;;;;x;;;;
+EVT_8014734_B;Abandon the Fertile Crescent Plan.;;;;;;;;;;;;;x;;;;
+EVT_8014735_NAME;The Fertile Crescent Plan has succeded!;;;;;;;;;;;;;x;;;;
+EVT_8014735_DESC;With the unifcation of both Jordan and Syria into the Kingdom of Greater Syria, we could now fully incoporate them into the propsoed Arab Federation, therefor fulfilling the objectives of the Fertile Crescent Plan.;;;;;;;;;;;;;x;;;;
+EVT_8014735_A;Create the Arab Federation.;;;;;;;;;;;;;x;;;;
+EVT_8014736_NAME;Should we join Syria or not;;;;;;;;;;;;;x;;;;
+EVT_8014736_DESC;The Creation of the Arab Federation has polarised many in Lebanon, some including the Syrian Socialsist Nationalist Party want to join this Fertile Crescent Union while others such as the Marionite community oppose it fiercly in fear of being ruled by Muslims form Baghdad,should we join we risk angering a majority of our population should we not join we risk raising tensions between ourselves and Syira and Iraq.;;;;;;;;;;;;;x;;;;
+EVT_8014736_A;Join the Arab Federation.;;;;;;;;;;;;;x;;;;
+EVT_8014736_B;We will preserve our independence.;;;;;;;;;;;;;x;;;;
+EVT_8014737_NAME;The Fertile Crescent Plan has succeded!;;;;;;;;;;;;;x;;;;
+EVT_8014737_DESC;In response to the recreation of the Kingdom of Syria and the Arab Federation, Lebanon has made to offer to us for us to annex Lebanon, what should we do.;;;;;;;;;;;;;x;;;;
+EVT_8014737_A;Annex all of Lebanon.;;;;;;;;;;;;;x;;;;
+EVT_8014737_B;Give Lebanon autonomy with its current borders unchanged.;;;;;;;;;;;;;x;;;;
+EVT_8014737_C;Give Lebanon autonomy with its territory reduced to the borders of the former Mount Lebanon Mutasarrifate.;;;;;;;;;;;;;x;;;;
+EVT_8014737_D;Refuse the offer.;;;;;;;;;;;;;x;;;;
+EVT_8007751_NAME;Enrico Mattei and ENI;;;;;;;;;;X;;;;;;;
+EVT_8007751_DESC;Enrico Mattei was an Italian public administrator. After World War II he was given the task of dismantling the Italian Petroleum Agency Agip, a state enterprise established by the Fascist regime. Instead Mattei enlarged and reorganized it into the National Fuel Trust, Ente Nazionale Idrocarburi (ENI). Under his direction ENI negotiated important oil concessions in the Middle East as well as a significant trade agreement with the Soviet Union which helped break the oligopoly of the 'Seven Sisters';;;;;;;;;;X;;;;;;;
+EVT_8007751_A;Build our oil industry;;;;;;;;;;X;;;;;;;
+EVT_8007751_B;Don't upset the 'sisters';;;;;;;;;;X;;;;;;;
+EVT_8007752_NAME;Conventio ad excludendum;;;;;;;;;;X;;;;;;;
+EVT_8007752_DESC;The party system of the so-called First Republic (1946–1994), though based on a proportional electoral law, saw the dominance of the Christian Democracy (DC) and the conventio ad excludendum against the Italian Communist Party (PCI). DC and PCI together gathered around 85pct of the votes in average. The system was thus a blocked bipolar system; governments were very short (in average lasting less than one year) and post-electoral, but the supporting parties and personnel could not change.;;;;;;;;;;X;;;;;;;
+EVT_8007752_A;Protect the DC/PCI dominance;;;;;;;;;;X;;;;;;;
+EVT_8007752_B;Don't middle in politics.;;;;;;;;;;X;;;;;;;
+EVT_8007753_NAME;Pope John XXIII;;;;;;;;;;X;;;;;;;
+EVT_8007753_DESC;Pope John XXIII was instrumental in opening up the Roman Catholic Church to reform by launching Vatican II and abolishing some antiquated practices. His actions were widely praised not only in the Catholic Church but throughout the world, despite the objections of small groups of traditionalists. Because of his Church renewal in this regard and also because of his vision of world peace in the universal family of humanity;;;;;;;;;;X;;;;;;;
+EVT_8007753_A;We have a new liberal Pope;;;;;;;;;;X;;;;;;;
 EVT_8015518_NAME;New Constitution;;;;;;;;;;X;;;;;;;
 EVT_8015518_DESC;After the approval by referendum of the new Constitution in June $YEAR$, Kenan Evren organized general elections. The secretary general of the National Security Council was general Haydar Saltik. Both he and Evren were the strong men of the regime, while the government was headed by a retired admiral, Bülend Ulusu, and included several retired military officers and a few civil servants. ;;;;;;;;;;X;;;;;;;
 EVT_8015518_A;Make a responsible transition to democracy;;;;;;;;;;X;;;;;;;

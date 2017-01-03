@@ -55,31 +55,6 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
-	the_return_of_port_arthur = {
-		picture = "the_return_of_port_arthur"
-		potential = {
-			NOT = { has_country_flag = the_return_of_port_arthur }
-			tag = CHI
-			RUS = { war = no government = proletarian_dictatorship }
-			CHI = { war = no  }
-			1481 = { owned_by = RUS }
-		}
-
-		allow = {
-			has_country_flag = sino_soviet_friendship
-			cold_war = 1
-		}
-
-		effect = {
-			RUS = { country_event = 32500 }
-			add_country_modifier = { name = comecon duration = 1750 }
-			set_country_flag = the_return_of_port_arthur
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}	
 
 	the_return_of_hong_kong = {
 		picture = "the_return_of_hong_kong"

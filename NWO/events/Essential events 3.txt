@@ -1100,20 +1100,20 @@ country_event = {
 prestige = 10
 relation = { who = CHI value = 100 }
 set_country_flag = returnofportarthur
-
+ai_chance = { factor = 100 }
 		}
 option = {
 	name = "Keep our territory"
 relation = { who = CHI value = -200 }
 set_country_flag = returnofportarthur
-
+ai_chance = { factor = 10 }
 		}
 option = {
 	name = "Grant independence to Port Arthur"
 release = MCK
 relation = { who = CHI value = -200 }
 set_country_flag = returnofportarthur
-
+ai_chance = { factor = 0 }
 		}
 			}
 #Finished Construction of the Seikan Tunnel
@@ -1173,5 +1173,49 @@ country_event = {
 name = "We welcome Rockall into the Great British Empire!"
 	any_country = { limit = { OR = { tag = IRE tag = ICL tag = DEN } } relation = { who = THIS value = -10 } }
 	}
+			}
+#Election of a Neo-Conservative President
+country_event = {
+	id = 1400039
+	title = "Election of a Neo-Conservative President"
+	desc = EVTDESC1400039
+	picture = "bush"
+
+trigger = {
+	tag = USA
+	year = 2000
+	war_policy = jingoism
+	
+	NOT = { has_country_flag = bush }
+}
+	
+option = {
+	name = "I just want you to know that, when we talk about war, we're really talking about peace"
+	set_country_flag = bush
+	}
+			}
+
+#Finished Construction of the Channel Tunnel
+country_event = {
+	id = 1400040
+	title = "Completion of the Channel Tunnel"
+	desc = EVTDESC1400040
+	picture = "channel_tunnel"
+
+	trigger = {
+	tag = ENG
+	222 = { owned_by = ENG }
+	400 = { owned_by = FRA }
+NOT = { has_country_modifier = channel_tunnel_construction }
+NOT = { any_owned_province = { has_province_modifier = channel_tunnel } }
+has_global_flag = channel_tunnel
+	}
+	
+	option = {
+	name = "Tremendous!"
+prestige = 50
+222 = { add_province_modifier = { name = channel_tunnel duration = -1 } }
+400 = { add_province_modifier = { name = channel_tunnel duration = -1 } }
+		}
 			}
 

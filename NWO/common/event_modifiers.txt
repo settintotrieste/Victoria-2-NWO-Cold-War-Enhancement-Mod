@@ -5,6 +5,9 @@
 ### Nuclear War ###
 
 nuke_sanctions = {
+import_cost = 0.2
+loan_interest = 0.25
+factory_owner_cost = 0.2
 icon = 18
 }
 
@@ -214,6 +217,17 @@ icon = 3
 }
 
 ### Tunnels ###
+
+channel_tunnel_construction = {
+tax_efficiency = -0.01
+icon = 3
+}
+
+channel_tunnel = { 
+local_factory_throughput = 0.25
+local_RGO_throughput = 0.25
+icon = 3
+}
 
 seikan_tunnel_construction = {
 tax_efficiency = -0.01

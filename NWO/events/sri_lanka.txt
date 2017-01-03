@@ -24,6 +24,7 @@ country_event = {
   option = {
     name = EVT_8028320_B
 	release_vassal = SRL 
+	diplomatic_influence =  { who = ENG value = 200 }
 	SRL = { set_country_flag = full_independance }
 	ai_chance = { factor = 100 }
   }

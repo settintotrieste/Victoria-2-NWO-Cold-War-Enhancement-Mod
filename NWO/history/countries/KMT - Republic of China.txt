@@ -1,5 +1,15 @@
 capital = 2221
 primary_culture = chinese
+culture = chinese_hokkien
+culture = chinese_hakka
+culture = manchu
+culture = miao
+culture = hani
+culture = hui
+culture = yi
+culture = min
+culture = yue
+culture = zhuang
 religion = buddhist
 government = presidential_dictatorship
 plurality = 11.0
