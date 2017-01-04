@@ -169,7 +169,6 @@ country_event = {
 		name = "EVT_19804_A"
 		set_global_flag = blocsenabled
 		
-		IDO = { nationalvalue = nv_islamic }
 		PER = { nationalvalue = nv_order }
 		ENG = { relation = { who = USA value = 200 } }
 		FRA = { relation = { who = USA value = 200 } }

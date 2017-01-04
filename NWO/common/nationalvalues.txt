@@ -27,7 +27,7 @@ nv_islamic = {
 	war_exhaustion = -0.1
 	tax_efficiency = 0.25
 	mobilisation_size = 10
-	factory_owner_cost = 10
+	factory_owner_cost = 2
 	factory_throughput = -1
 	leadership_modifier = 1
 	unit_start_experience = 1
@@ -35,7 +35,7 @@ nv_islamic = {
 	assimilation_rate = -0.5
 	global_immigrant_attract = -1
 	army_tech_research_bonus = 0.5
-	import_cost = 100
+	import_cost = 1
 	culture_tech_research_bonus = -0.5
 }
 nv_meritocracy = {

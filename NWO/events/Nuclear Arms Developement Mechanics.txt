@@ -181,6 +181,7 @@ OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nati
 NOT = { sphere_owner = { relation = { who = THIS value = 0 } } }
 war = no
 in_sphere = THIS
+is_vassal = no
 is_greater_power = no
 	}
 	
@@ -249,6 +250,50 @@ is_greater_power = no
 option = {
 name = "Great!"
 remove_country_modifier = nuke_sanctions
+prestige = 20
+		}
+
+	}
+#### Disarm Rougue Nations of the Bomb ###
+country_event = {
+	id = 1231441
+	title = "The UN demands that we relinquish our Nuclear Bombs!"
+	desc = "Hostile UN members demand that we disarm ourselves of our nuclear weapons to reduce our threat to them."
+	picture = "nuclear_disarmament_un"
+	
+	
+	trigger = {
+OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nation }
+OR = { government = theocracy government = populist_dictatorship government = nationalist_dictatorship government = presidential_dictatorship  }
+war = no
+in_sphere = THIS
+is_vassal = no
+is_greater_power = no
+	}
+
+	mean_time_to_happen = {
+		months = 60 
+	}
+
+	option = {
+name = "Accept"
+any_neighbor_country = { relation = { who = THIS value = 100 } } 
+remove_country_modifier = hydrogen_nation 
+remove_country_modifier = atomic_nation
+remove_country_modifier = develop_atomic_bomb 
+remove_country_modifier = develop_hydrogen_bomb  
+clr_country_flag = atomic_bomb_developed
+clr_country_flag = hydrogen_bomb_developed
+remove_country_modifier = icbm_bomb
+remove_country_modifier = sub_bomb
+remove_country_modifier = air_bomb
+prestige = -50
+		}
+
+option = {
+name = "Reject"
+any_neighbor_country = { relation = { who = THIS value = -100 } } 
+add_country_modifier = { name = nuke_sanctions duration = -1 }
 prestige = 20
 		}
 

@@ -212,7 +212,7 @@ any_owned = {
 					limit = { is_core = PAK }
 					secede_province = PAK
 				}
-	PAK = { government = hms_government nationalvalue = nv_islamic }
+	PAK = { government = hms_government }
 	release_vassal = NEP
 	release_vassal = JAK
 	leave_alliance = TIB

@@ -1,4 +1,26 @@
 CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;HUNGARIAN;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;;x;;;;;;;;;;;;;;;;
+overlord_loan_requested;Recently Requested Loan From Our Geopolitical Masters;;;;;;;;x
+imf_loan_requested;Recently Requested Loan From The International Monetary Fund;;;;;;;;x
+foreign_loan_requested;Recently Requested Loan From Creditor Nations;;;;;;;;x
+imf_loan;Receiving International Monetary Fund Loan;;;;;;;;x
+imf_loan_desc;A member country may request IMF financial assistance if it has an actual or potential balance of payments need—that is, if it lacks or potentially lacks sufficient financing on affordable terms to meet its net international payments (e.g., imports, external debt redemptions) while maintaining adequate reserve buffers going forward. IMF resources provide a cushion that eases the adjustment policies and reforms that a country must make to correct its balance of payments problem and help restore conditions for strong economic growth.;;;;;;;;x 
+imf_loan_title;Request a Foreign Loan from The International Monetary Fund;;;;;;;;x
+overlord_loan_title;Request a Foreign Loan from our Geopolitical Masters;;;;;;;;x
+foreign_loan_title;Request a Foreign Loan from Creditor Nations;;;;;;;;x
+foreign_loan_desc;Foreign debt is an outstanding loan that one country owes to another country or institutions within that country. Foreign debt also includes due payments to international organizations such as the International Monetary Fund (IMF). The debt may be comprised of fees for goods and services or outstanding credit due to a negative balance of trade. Total foreign debt can be a combination of short-term and long-term liabilities.;;;;;;;;x
+overlord_loan_desc;Foreign debt is an outstanding loan that one country owes to another country or institutions within that country. Foreign debt also includes due payments to international organizations such as the International Monetary Fund (IMF). The debt may be comprised of fees for goods and services or outstanding credit due to a negative balance of trade. Total foreign debt can be a combination of short-term and long-term liabilities.;;;;;;;;x
+EVTDESC1400041;The world now has entered the post Cold War era. Many efforts have been made since the 1950s to promote relaxation of tensions and on many occasions in the past it appeared that the two power blocks had entered the period of detente. Gradually, however, the Cold War came to an end. This was due to the operation of several factors acting in tandem however we must decide which was the most important.;;;;;;;;x
+mnchigh;Favourable Multinational Corporations Policies;;;;;;;;x
+mncmedium;Mildly Favourable Multinational Corporations Policies;;;;;;;;x
+mnclow;Unfavourable Multinational Corporations Policies;;;;;;;;x
+mnchigh_title;Enact Favourable Multinational Corporations Policies;;;;;;;;x
+mncmedium_title;Enact Mildly Favourable Multinational Corporations Policies;;;;;;;;x
+mnclow_title;Enact Unfavourable Multinational Corporations Policies;;;;;;;;x
+changemnc_title;Change Multinational Corporations Policies;;;;;;;;x
+mnchigh_desc;Enact Favourable Multinational Corporations Policies;;;;;;;;x
+mncmedium_desc;Enact Mildly Favourable Multinational Corporations Policies;;;;;;;;x
+mnclow_desc;Enact Unfavourable Multinational Corporations Policies;;;;;;;;x
+changemnc_desc;A multinational corporation (MNC) has facilities and other assets in at least one country other than its home country. Such companies have offices and/or factories in different countries and usually have a centralized head office where they coordinate global management.;;;;;;;;x
 stockcrash;Stock Market Induced Recession;;;;;;;;x
 channel_tunnel_construction;Channel Tunnel construction underway;;;;;;;;x
 channel_tunnel;Channel Tunnel;;;;;;;;x

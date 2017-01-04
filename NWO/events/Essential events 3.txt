@@ -1218,4 +1218,37 @@ prestige = 50
 400 = { add_province_modifier = { name = channel_tunnel duration = -1 } }
 		}
 			}
+#End of the Cold War Reasons
+country_event = {
+	id = 1400041
+	title = "Reason for the end of the Cold War?"
+	desc = EVTDESC1400041
+	picture = "cw_reason"
+
+	trigger = {
+	tag = USA
+	USA = { government = democracy }
+	RUS = { NOT = { government = proletarian_dictatorship } }
+	NOT = { has_global_flag = cw_reason }
+	}
+	
+	option = {
+	name = "Western Triumphalism!"
+prestige = 50
+set_global_flag = cw_reason
+relation = { who = RUS value = -200 }
+		}
+option = {
+	name = "Soviet Initiative!"
+prestige = -10
+set_global_flag = cw_reason
+relation = { who = RUS value = 200 }
+		}
+option = {
+	name = "The Power of the People!"
+prestige = 25
+set_global_flag = cw_reason
+relation = { who = RUS value = 100 }
+		}
+			}
 

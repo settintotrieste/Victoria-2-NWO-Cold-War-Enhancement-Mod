@@ -165,6 +165,11 @@
 }
 #Banda Aceh - Aceh (1506000/376500 POPS)
 1405 = {
+	farmers = {
+		culture = indonesian
+		religion =  sunni 
+		size = 250000
+	 } 
 	soldiers = {
 		culture = indonesian
 		religion =  sunni 
@@ -503,6 +508,11 @@
 }
 #Syasir - Bandung (5027000/1256750 POPS)
 2620 = {
+	farmers = {
+		culture = indonesian
+		religion =  sunni 
+		size = 250000
+	 } 
 	officers = {
 		culture = indonesian
 		religion =  sunni 
@@ -556,6 +566,11 @@
 }
 #Omsukchan - Tegal (4692000/1173000 POPS)
 2638 = {
+	farmers = {
+		culture = indonesian
+		religion =  sunni 
+		size = 250000
+	 } 
 	officers = {
 		culture = indonesian
 		religion =  sunni 
@@ -633,6 +648,11 @@
 		culture = indonesian
 		religion =  sunni 
 		size = 22729
+	 } 
+	farmers = {
+		culture = indonesian
+		religion =  sunni 
+		size = 250000
 	 } 
 	farmers = {
 		culture = indonesian
