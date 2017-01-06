@@ -1,7 +1,7 @@
 #======= WW2 =========
 destroyer = {
 	icon = 16
-	naval_icon = 5
+	naval_icon = 8
 	
 	type = naval
 	sprite = Destroyer
@@ -17,7 +17,7 @@ destroyer = {
 	max_strength = 100
 	default_organisation = 30
 	maximum_speed = 32
-	weighted_value = 5.0
+	weighted_value = 3.0
 	can_build_overseas = yes
 
 

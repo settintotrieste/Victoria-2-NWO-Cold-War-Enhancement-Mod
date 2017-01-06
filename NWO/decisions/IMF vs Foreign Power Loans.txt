@@ -29,7 +29,7 @@ overlord_loan = {
 		picture = "overlord_loan"
 	potential = {
 is_secondary_power = no
-
+is_greater_power = no
 OR = { in_sphere = THIS
 is_vassal = THIS }
 election = no
@@ -56,6 +56,7 @@ add_country_modifier = { name = overlord_loan_requested duration = 1825 }
 foreign_loan = {
 picture = "foreign_loan"
 potential = {
+year = 1947
 election = no
 is_greater_power = no
 is_secondary_power = no

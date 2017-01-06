@@ -13,7 +13,7 @@ modern_infantry = {
 	max_strength = 3
 	default_organisation = 20
 	maximum_speed = 4.00
-	weighted_value = 1.0
+	weighted_value = 5.0
 
 	build_time = 90
 	# 0.5B
@@ -25,16 +25,16 @@ modern_infantry = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		small_arms = 0.8
-		weaponry = 0.8
+		small_arms = 0.08
+		weaponry = 0.08
 	}
 
 	#Land Abilties
 	reconnaissance = 1
-	attack = 4
-	#siege = 1
-	defence = 4
-	discipline = 1
-	support = 0.0
-	maneuver = 1
+	attack = 32
+	siege = 8
+	defence = 16
+	discipline = 4
+	support = 1.0
+	maneuver = 4
 }

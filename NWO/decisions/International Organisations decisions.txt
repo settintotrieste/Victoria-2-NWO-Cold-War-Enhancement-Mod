@@ -28,6 +28,7 @@ jointheibrd = {
 				}
 		effect = {
 			prestige = 10
+set_global_flag = idaformed
 	add_country_modifier = { name = ibrd_member duration = -1 }
 		}
 		ai_will_do = { 

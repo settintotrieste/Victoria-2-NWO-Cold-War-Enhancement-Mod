@@ -1,12 +1,12 @@
 #======= WW2 =========
 frigate = {
 	icon = 15
-	naval_icon = 4
+	naval_icon = 8
 	
 	type = naval
 	sprite = Frigate
 	unit_type = light_ship
-	capital = yes
+	
 	floating_flag = yes
 	active = yes
 	colonial_points = 2
@@ -16,7 +16,7 @@ frigate = {
 	max_strength = 100
 	default_organisation = 30
 	maximum_speed = 50
-	weighted_value = 4.0
+	weighted_value = 2.0
 	can_build_overseas = yes
 
 	#Building Costs

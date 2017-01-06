@@ -1,7 +1,7 @@
 #======= Modern =========
 modern_fighter = {
 	icon = 17
-	
+	capital = yes
 	type = land
 	sprite = Fighter
 	active = no
@@ -13,7 +13,7 @@ modern_fighter = {
 	max_strength = 3
 	default_organisation = 30
 	maximum_speed = 5.00
-	weighted_value = 10.0
+	weighted_value = 5.0
 
 	#Building Costs
 	build_time = 120
@@ -31,11 +31,11 @@ modern_fighter = {
 	}
 
 	#Land Abilties
-	reconnaissance = 1
-	siege = 0
-	attack = 8
-	defence = 2
-	discipline = 1.0
-	support = 2
-	maneuver = 4
+	reconnaissance = 4
+	siege = 1
+	attack = 32
+	defence = 8
+	discipline = 4.0
+	support = 8
+	maneuver = 16
 }

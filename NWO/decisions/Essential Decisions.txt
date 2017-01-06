@@ -356,12 +356,36 @@ leavetheoecd = {
 		}
 		effect = {
 			prestige = -10
-remove_country_modifier = oecd_member duration
+remove_country_modifier = oecd_member 
 	USA = { relation = { who = THIS value = -100 } }
 USA = { diplomatic_influence = { who = THIS value = -50 } }
 		}
 		ai_will_do = { 
 			factor = 1 
 			}
-	}	
+	}
+
+end_of_bretton_system = {
+		picture = "bwsend"
+	potential = {
+		tag = USA
+		has_country_modifier = bretton_system
+	NOT = { has_global_flag = end_of_bretton_system }
+		}
+		allow = {
+			war = no
+		flexible_exchange_rates = 1
+					}
+		effect = {
+prestige = 50
+remove_country_modifier = bretton_system
+any_country = { remove_country_modifier = bretton_system }
+any_country = { any_owned = { remove_province_modifier = bretton_woods_effect } }
+set_global_flag = end_of_bretton_system
+	}
+		ai_will_do = { 
+			factor = 1 
+			}
+	}
+	
 }

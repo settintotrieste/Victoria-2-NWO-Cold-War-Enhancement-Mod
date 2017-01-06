@@ -195,8 +195,9 @@ political_decisions = {
 	bretton_system = {
 		picture = "bretton_system"
 		potential = {
+NOT = { has_global_flag = end_of_bretton_system }
 			NOT = { has_country_modifier = comecon }
-			NOT = { has_country_modifier = bretton_system_excluded }
+	NOT = { has_country_modifier = bretton_system_excluded }
 			NOT = { has_country_modifier = bretton_system }
 			OR = { NOT = { government = proletarian_dictatorship } has_country_flag = market_communism }
 			NOT = { OR = { is_vassal = yes tag = RUS } government = proletarian_dictatorship }

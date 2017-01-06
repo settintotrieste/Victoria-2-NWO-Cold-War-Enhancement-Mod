@@ -18,15 +18,16 @@ infantry = {
 	build_time = 90
 	# 0.5B
 	build_cost = {
-		small_arms = 20.0
-		weaponry = 5.0
+		clothes = 10
+		small_arms = 20
+		weaponry = 5
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		small_arms = 0.2
-		fuel = 0.4
-		weaponry = 0.2
+		small_arms = 0.02
+		fuel = 0.04
+		weaponry = 0.02
 	}
 
 	#Land Abilties

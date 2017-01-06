@@ -68,6 +68,8 @@ remove_country_modifier = eec
 				}
 			}
 			tech_school = traditional_academic
+	remove_country_modifier = xeu_member
+
 			any_owned = { 
 				remove_province_modifier = single_market			
 		remove_province_modifier = currency_union_province
@@ -96,7 +98,7 @@ remove_country_modifier = eec
 			war = no
 		}
 		effect = {
-			any_owned = {  add_province_modifier = { name = single_market duration = -1 } }
+any_owned = {  add_province_modifier = { name = single_market duration = -1 } }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -108,8 +110,8 @@ remove_country_modifier = eec
 			capital_scope = { continent = europe } # NOT = { tag = RUS } NOT = { tag = BYE } # Union Scope
 		}
 		allow = {
-			has_country_flag = xeu_ambition
-			capital_scope = { has_province_modifier = single_market }
+	has_country_flag = xeu_ambition
+	capital_scope = { has_province_modifier = single_market }
 			OR = {
 				government = democracy
 				government = hms_government
@@ -119,7 +121,7 @@ remove_country_modifier = eec
 			war = no
 		}
 		effect = {
-
+add_country_modifier = { name = xeu_member duration = -1 }
 add_country_modifier = { name = eec
 duration = -1 }
 			any_owned = {  add_province_modifier = { name = currency_union_province duration = -1 } }

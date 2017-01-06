@@ -1,7 +1,7 @@
 #======= WW2 =========
 transportship = {
 	icon = 6
-	naval_icon = 3
+	naval_icon = 4
 	
 	type = naval
 	sprite = Transportship
@@ -14,7 +14,7 @@ transportship = {
 	max_strength = 100
 	default_organisation = 30
 	maximum_speed = 12
-	weighted_value = 1.0
+	weighted_value = 0.0
 	can_build_overseas = yes
 
 

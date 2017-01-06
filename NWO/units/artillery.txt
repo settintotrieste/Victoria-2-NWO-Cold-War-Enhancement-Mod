@@ -19,14 +19,14 @@ artillery = {
 	build_time = 120
 	# cost 4M # -> 100 canons 0.5B
 	build_cost = {
-		weaponry = 10.0
-		small_arms = 10.0
+		weaponry = 10
+		small_arms = 10
 	}
 	
-	supply_consumption = .0
+	supply_consumption = 1.0
 	supply_cost = { # 0.4 mil $
-		weaponry = 1
-		small_arms = 1
+		weaponry = 0.02
+		small_arms = 0.02
 	}
 	
 

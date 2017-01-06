@@ -19,15 +19,15 @@ bomber = {
 	build_time = 120
 	#cost 53M x 10 = 0.5B
 	build_cost = {
-		aeroplanes = 13.0
+		aeroplanes = 13
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		aeroplanes = 0.05
-		weaponry = 0.05
-		small_arms = 0.05
-		fuel = 0.05
+		aeroplanes = 0.02
+		weaponry = 0.02
+		small_arms = 0.02
+		fuel = 0.1
 	}
 
 	#Land Abilties

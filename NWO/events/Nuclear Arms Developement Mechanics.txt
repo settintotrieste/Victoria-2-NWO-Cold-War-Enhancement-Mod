@@ -177,7 +177,7 @@ country_event = {
 	
 	trigger = {
 OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nation }
-
+NOT = { has_country_modifier = nuke_sanctions }
 NOT = { sphere_owner = { relation = { who = THIS value = 0 } } }
 war = no
 in_sphere = THIS
@@ -264,6 +264,7 @@ country_event = {
 	
 	trigger = {
 OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nation }
+NOT = { has_country_modifier = nuke_sanctions }
 OR = { government = theocracy government = populist_dictatorship government = nationalist_dictatorship government = presidential_dictatorship  }
 war = no
 in_sphere = THIS

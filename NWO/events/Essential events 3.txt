@@ -1218,6 +1218,7 @@ prestige = 50
 400 = { add_province_modifier = { name = channel_tunnel duration = -1 } }
 		}
 			}
+
 #End of the Cold War Reasons
 country_event = {
 	id = 1400041
@@ -1251,4 +1252,164 @@ set_global_flag = cw_reason
 relation = { who = RUS value = 100 }
 		}
 			}
+
+#Rotating Chairmanship of the EU
+country_event = {
+	id = 1400042
+	title = "Chairmanship of the European Union"
+	desc = "The Chairmanship of the European Union is rotating again. The Chairmanship only lasts 5 years." 
+	picture = "eu_chairman"
+	
+	trigger = {
+		year = 1946
+		NOT = { has_country_modifier = xeu_chairmanship }
+		has_country_flag = xeu_chairmanship
+	}
+	
+	option = {
+	name = "We had a good run."
+random_country = { limit = { AND = { NOT = { has_country_modifier = xeu_chairmanship } has_country_modifier = xeu_member has_country_modifier = creditor_nation } } country_event = 1300018 }
+	remove_country_modifier = xeu_chairmanship
+	clr_country_flag = xeu_chairmanship
+		}
+}
+
+#Rotating Chairmanship of the EU - select the new leader
+country_event = {
+	id = 1400043
+	title = "Chairmanship of the European Union"
+	desc = "The Chairmanship of the EU is rotating and the Chairmanship has come to us. The Chairmanship only lasts 5 years." 
+	picture = "eu_chairman"
+	
+is_triggered_only = yes
+
+	option = {
+	name = "Splendid!"
+prestige = 10
+any_country = { limit = { tech_school = XEU_tech_school } country_event = 1400044 }
+add_country_modifier = { name = xeu_chairmanship duration = 1825 }
+set_country_flag = xeu_chairmanship
+		}
+}
+
+#Rotating Chairmanship of the EU - inform EU members of change
+country_event = {
+	id = 1400044
+	title = "$FROMCOUNTRY$ has become new EU Chairman"
+	desc = "The Chairmanship of the EU is rotating and the Chairmanship has come to $FROMCOUNTRY$. The Chairmanship only lasts 5 years." 
+	picture = "eu_chairman"
+	
+is_triggered_only = yes
+
+	option = {
+	name = "Great!"
+	relation = { who = FROM value = 20 }
+		}
+	option = {
+	name = "Terrible!"
+	relation = { who = FROM value = -20 }
+		}
+}
+#Rotating Chairmanships first - EU
+country_event = {
+	id = 1400045
+	title = "Chairmanship of the European Union"
+	desc = "The Chairmanship of the EU is rotating and we get the first one as we are the founder. The Chairmanship only lasts 5 years." 
+	picture = "eu_chairman"
+	
+trigger = { 
+is_greater_power = yes
+economic_globalization = 1
+any_greater_power = { limit = { tech_school = XEU_tech_school } NOT = { has_country_modifier = xeu_chairmanship } }
+any_neighbor_country = { limit = { tech_school = XEU_tech_school } NOT = { has_country_modifier = xeu_chairmanship } }
+has_country_modifier = xeu_member
+NOT = { has_global_flag = eufirst }
+}
+	major = yes
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = xeu_chairmanship duration = 1825 }
+set_country_flag = xeu_chairmanship
+set_global_flag = eufirst
+		}
+}
+#Bretton Woods Reduce Gold Output
+country_event = {
+	id = 1400046
+	title = "Bretton Woods System Effects"
+	desc = EVTDESC1400046
+	picture = "bretton_woods_system_gold"
+	
+trigger = {
+NOT = { tag = USA }
+war = no
+has_country_modifier = bretton_system
+any_owned_province = { AND = { trade_goods = credit NOT = { has_country_modifier = bretton_woods_effect } } }
+any_owned_province = { trade_goods = credit }
+NOT = { has_country_flag = bsystem }
+}
+
+option = {
+name = "OK"
+any_owned = { limit = { trade_goods = credit }
+add_province_modifier = { name = bretton_woods_effect duration = -1 } }
+set_country_flag = bsystem
+		}
+}
+
+#UN Sanctions for high Infamy nations - Start
+country_event = {
+	id = 1400047
+	title = "UN sanctions imposed on our nation"
+	desc = "Due to our high international infamy, the international community has decided to impose sanctions on us via the UN."
+	picture = "nuclear_disarmament_un"
+	
+trigger = {
+NOT = { has_country_modifier = un_sanctions }
+badboy = 25
+}
+
+option = {
+name = "We shall press on!"
+add_country_modifier = { name = un_sanctions duration = -1 }
+prestige = -10
+		}
+}
+#UN Sanctions for high Infamy nations - Stop
+country_event = {
+	id = 1400048
+	title = "UN sanctions imposed on our nation retracted"
+	desc = "Due to our low international infamy, the international community has decided to retract sanctions on us via the UN."
+	picture = "nuclear_disarmament_un"
+	
+trigger = {
+has_country_modifier = un_sanctions
+NOT = { badboy = 25 }
+}
+
+option = {
+name = "We thank the UN for their actions!"
+remove_country_modifier = un_sanctions		
+	}
+}
+#UN Sanctions for high Infamy nations with nukes - Start
+country_event = {
+	id = 1400049
+	title = "UN sanctions imposed on our nation"
+	desc = "Due to our nuclear capability & high infamy, the international community has decided to impose sanctions on us via the UN."
+	picture = "nuclear_disarmament_un"
+	
+trigger = {
+OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nation }
+NOT = { has_country_modifier = nuke_sanctions }
+badboy = 25
+}
+
+option = {
+name = "We shall press on!"
+add_country_modifier = { name = nuke_sanctions duration = -1 }
+prestige = -10
+		}
+}
 

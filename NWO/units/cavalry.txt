@@ -19,15 +19,15 @@ cavalry = {
 	build_time = 120
 	# cost 29M * 20 = 0.5B
 	build_cost = {
-		aeroplanes = 13.0
+		aeroplanes = 13
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		aeroplanes = 0.8
-		weaponry = 0.08
-		small_arms = 0.08
-		fuel = 1
+		aeroplanes = 0.02
+		weaponry = 0.02
+		small_arms = 0.02
+		fuel = 0.1
 	}
 
 	#Land Abilties

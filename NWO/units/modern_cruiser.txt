@@ -1,12 +1,12 @@
 #======= Modern =========
 modern_cruiser = {
 	icon = 21
-	naval_icon = 9
+	naval_icon = 10
 	
 	type = naval
 	sprite = ModernCruiser
 	unit_type = big_ship
-	capital = yes
+	
 	floating_flag = yes
 	active = no
 	colonial_points = 5
@@ -16,7 +16,7 @@ modern_cruiser = {
 	max_strength = 100
 	default_organisation = 30
 	maximum_speed = 28
-	weighted_value = 24.0
+	weighted_value = 16.0
 	can_build_overseas = no
 
 
