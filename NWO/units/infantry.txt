@@ -13,7 +13,7 @@ infantry = {
 	max_strength = 3
 	default_organisation = 30
 	maximum_speed = 8.00
-	weighted_value = 2.0
+	weighted_value = 1.0
 
 	build_time = 90
 	# 0.5B

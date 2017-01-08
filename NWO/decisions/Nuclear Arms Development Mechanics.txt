@@ -20,16 +20,21 @@ allow = {
 election = no
 
 OR = { 
+
 AND = { tag = RUS ai = yes year = 1945 }
 AND = { tag = ENG ai = yes year = 1949 }
 AND = { tag = FRA ai = yes year = 1956 }
 AND = { tag = CHI ai = yes year = 1960 }
-AND = { tag = RUS ai = no }
-AND = { tag = ENG ai = no }
-AND = { tag = FRA ai = no }
-AND = { tag = CHI ai = no }
+
+AND = { tag = HND ai = yes year = 1970 }
+AND = { tag = PAK ai = yes year = 1980 }
+AND = { tag = NKO ai = yes year = 2003 }
+AND = { tag = ISR ai = yes year = 1963 }
+AND = { tag = SAF ai = yes year = 1979 }
 
 AND = { 
+ai = yes
+year = 1969
 money = 2000000
 NOT = { has_country_modifier = alliance_nato }
 NOT = { has_country_modifier = warsaw_pact }
@@ -42,6 +47,8 @@ NOT = { government = sar_government }
 NOT = { government = colonial_government }
 war_policy = jingoism
 }
+
+AND = { ai = no money = 2000000 }
 
 }
 

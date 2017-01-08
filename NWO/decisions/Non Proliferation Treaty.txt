@@ -4,6 +4,11 @@ political_decisions = {
 				picture = "non_proliferation_treaty"
                 potential = {
 					year = 1968
+NOT = { has_country_modifier = atomic_nation }
+NOT = { has_country_modifier = hydrogen_nation }
+NOT = { has_country_modifier = develop_atomic_bomb }
+NOT = { has_country_modifier = develop_hydrogen_bomb }
+
 NOT = { has_country_modifier = non_proliferation_treaty }
 					is_greater_power = no 
 					OR = { 

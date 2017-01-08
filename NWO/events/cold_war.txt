@@ -185,6 +185,7 @@ country_event = {
 	}
 
 }
+###### Set up NAM ######
 country_event = {
 	id = 19805
 	title = "EVT_19805_NAME" # EVT_19805_NAME;Non Aligned Movement
@@ -208,14 +209,13 @@ country_event = {
 	option = {
 		name = "EVT_19805_A" # EVT_19805_A;Interesting
 		set_country_flag = namformformed
-USA =  { diplomatic_influence =  { who = THIS value = 50 } }
+USA =  { relation =  { who = THIS value = 50 } }
 		add_country_modifier = { name = independent_bloc duration = 350 }
 	}
 
 }
 
-#
-################## Disable Blocs under events ###################
+############### Disable Blocs under events ###################
 
 country_event = {
 	id = 19806

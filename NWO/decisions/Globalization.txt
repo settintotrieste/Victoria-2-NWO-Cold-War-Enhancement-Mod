@@ -252,16 +252,18 @@ NOT = { has_global_flag = end_of_bretton_system }
 		picture = "international_court_of_justice"
 		alert = no
 		potential = {
-			NOT = { has_country_flag = international_court_of_justice }
-			#detente = 1
-		}
+year = 1947
+NOT = { has_country_flag = international_court_of_justice }
+			}
 		allow = {
-			globalization = 1
-			OR = { government = democracy government = hms_government }
-			NOT = { ruling_party_ideology = populist }
+war = no
+election = no
+OR = { government = democracy government = hms_government }
+		NOT = { ruling_party_ideology = populist }
+NOT = { ruling_party_ideology = communist }
 		}
 		effect = {
-			set_country_flag = international_court_of_justice
+		set_country_flag = international_court_of_justice
 			prestige = 10
 		}
 		ai_will_do = { factor = 1 }

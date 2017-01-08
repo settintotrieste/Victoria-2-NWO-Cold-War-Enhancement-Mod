@@ -1412,4 +1412,71 @@ add_country_modifier = { name = nuke_sanctions duration = -1 }
 prestige = -10
 		}
 }
+#Return the Austrian Lands 
+country_event = {
+	id = 1400050
+	title = "$FROMCOUNTRY$ demands that we return our Austrian Lands!"
+	desc = "Since the end of WW2 the protection of Austria's territorial integrity has been sought by the international community."
+	picture = "austrian_lands"
+	
+is_triggered_only = yes
+
+option = {
+name = "We shall return the lands!"
+any_owned = { limit = { is_core = AUS } secede_province = AUS }
+prestige = 10
+ai_chance = { factor = 1 }
+		}
+option = {
+name = "We will not return the lands!"
+relation = { who = FROM value = -100 }
+prestige = -10
+ai_chance = { factor = 0 }
+		}
+}
+#Oil Crisis
+country_event = {
+	id = 1400051
+	title = "Oil Crisis of $YEAR$"
+	desc = "$COUNTRY$ has managed to persuade the OPEC countries to dramatically reduce their oil output causing an acute oil shortage!"
+	picture = "austrian_lands"
+	major = yes
+is_triggered_only = yes
+
+option = {
+name = "We shall punish those nations for their misdeeds!"
+		}
+}
+#Recapture of Port Arthur
+country_event = {
+	id = 1400052
+	title = "$YEAR$ Invasion of Port Arthur"
+	desc = "The Republic of China (ROC) have managed to sieze Port Arthur. We should sieze it back!"
+	picture = "port_arthur_recapture"
+	
+trigger = {
+tag = CHI
+CHI = { government = proletarian_dictatorship }
+exists = KMT
+NOT = { war_with = KMT }
+war = no
+NOT = { has_global_flag = port_arthur_recapture }
+1481 = { owned_by = KMT }
+
+}
+
+option = {
+name = "Sieze Port Arthur!"
+set_global_flag = port_arthur_recapture
+badboy = 5
+KMT = { 1481 = { secede_province = CHI } }
+ai_chance = { factor = 1 }
+		}
+option = {
+name = "Let the capitalist swine keep Port Arthur!"
+set_global_flag = port_arthur_recapture
+prestige = -50
+ai_chance = { factor = 0 }
+		}
+}
 

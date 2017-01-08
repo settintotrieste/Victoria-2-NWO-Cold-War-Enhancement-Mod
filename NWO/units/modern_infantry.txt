@@ -13,7 +13,7 @@ modern_infantry = {
 	max_strength = 3
 	default_organisation = 20
 	maximum_speed = 4.00
-	weighted_value = 5.0
+	weighted_value = 4.0
 
 	build_time = 90
 	# 0.5B
