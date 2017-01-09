@@ -11,7 +11,22 @@ icon = 18
 }
 
 oil_crisis = {
-local_RGO_throughput = -0.75
+local_RGO_throughput = -0.99
+icon = 18
+}
+
+oil_high = {
+local_RGO_throughput = 0.50
+icon = 18
+}
+
+oil_medium = {
+
+icon = 18
+}
+
+oil_low = {
+local_RGO_throughput = -0.50
 icon = 18
 }
 
@@ -429,7 +444,7 @@ keiretsu = {
 
 industrial_pop_boom = {  
 social_reform_desire = 0.10
-population_growth = 0.003
+population_growth = 0.0015
 icon = 17
 }
 

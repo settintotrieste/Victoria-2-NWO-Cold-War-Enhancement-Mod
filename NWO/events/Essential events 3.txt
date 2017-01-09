@@ -598,6 +598,12 @@ country_event = {
 	name = "We need to find a way to rejoin the organisation!"
 		prestige = -10
 		remove_country_modifier = opecmember
+any_owned = { 
+remove_province_modifier = oil_high }
+any_owned = { 
+remove_province_modifier = oil_medium }
+any_owned = { 
+remove_province_modifier = oil_low } 
 		}
 	}
 #Vietnamese Doi Moi
@@ -1345,7 +1351,7 @@ trigger = {
 NOT = { tag = USA }
 war = no
 has_country_modifier = bretton_system
-any_owned_province = { AND = { trade_goods = credit NOT = { has_country_modifier = bretton_woods_effect } } }
+any_owned_province = { AND = { trade_goods = credit NOT = { has_province_modifier = bretton_woods_effect } } }
 any_owned_province = { trade_goods = credit }
 NOT = { has_country_flag = bsystem }
 }

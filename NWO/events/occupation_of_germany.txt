@@ -768,7 +768,7 @@ country_event = {
 	relation = { who = DDR value = -25 } 
 	relation = { who = GER value = 30 } 
 	badboy = -5 
-    ai_chance = { factor = 100 }
+    ai_chance = { factor = 0 }
 	set_country_flag = stalins_note_ok_nato
   }
 
@@ -777,7 +777,7 @@ country_event = {
 	relation = { who = RUS value = -75 } 
 	relation = { who = DDR value = -75 } 
 	badboy = -5 
-    ai_chance = { factor = 0 }
+    ai_chance = { factor = 1 }
   }
 
   option = {

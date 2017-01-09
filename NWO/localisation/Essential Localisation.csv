@@ -1,4 +1,18 @@
 CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;HUNGARIAN;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;;x;;;;;;;;;;;;;;;;
+family_values1;Baby Boom;;;;;;;;x
+oil_high_title;Direct crude oil production in our nation to exceed OPEC quotas;;;;;;;;x
+oil_high_desc;Exceeding OPEC quotas for crude oil production can cause oil saturation in the markets which may in turn drive down the price of oil.;;;;;;;;x
+oil_medium_title;Direct crude oil production in our nation to meet OPEC quotas;;;;;;;;x
+oil_medium_desc;Meeting OPEC quotas for crude oil production can prevent oil saturation or shortage in the markets which may in turn keep the price of oil stable.;;;;;;;;x
+oil_low_title;Direct crude oil production in our nation to fall short of OPEC quotas;;;;;;;;x
+oil_low_desc;Falling short of OPEC quotas for crude oil production can cause oil shortages in the markets which may in turn drive up the price of oil and inflate consumer prices.;;;;;;;;x
+oil_reset_title;Change crude oil production in our nation with respect to the OPEC quotas;;;;;;;;x
+oil_reset_desc;Perhaps it is time we change our oil production to better suit our needs than that of OPEC?;;;;;;;;x
+oil_high;Production of Crude Oil exceeding OPEC quota;;;;;;;;x
+oil_medium;Production of Crude Oil meeting OPEC quota;;;;;;;;x
+oil_low;Production of Crude Oil less than OPEC quota;;;;;;;;x
+oil_medium;Production of Crude Oil meeting OPEC quota;;;;;;;;x
+oil_high;Production of Crude Oil below OPEC quota;;;;;;;;x
 oil_crisis_chaos;Oil Crisis Chaos;;;;;;;;x
 oil_crisis;Reduction of oil output from OPEC action;;;;;;;;x
 opec_oil_crisis_title;Initiate an Oil Crisis via the Organisation of Petroleum Exporting Countries (OPEC);;;;;;;;x

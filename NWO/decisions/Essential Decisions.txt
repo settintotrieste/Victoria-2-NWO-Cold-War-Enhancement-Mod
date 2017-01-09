@@ -104,7 +104,6 @@ AND = { NOT = { in_sphere = ENG } NOT = { relation = { who = ENG value = 0 } } }
 		}
 		effect = {
 			prestige = 20
-		tech_school = army_tech_school
 ENG = { diplomatic_influence = { who = HND value = -200 } }
 			relation = { who = ENG value = -100 }
 			government = democracy

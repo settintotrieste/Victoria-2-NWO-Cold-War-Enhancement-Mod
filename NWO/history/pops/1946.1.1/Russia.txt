@@ -11094,7 +11094,7 @@
 		religion =  taoism 
 		size = 671433
 	 }
-	slaves = {
+	craftsmen = {
 		culture = korean
 		religion =  taoism 
 		size = 671433
