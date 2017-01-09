@@ -91,7 +91,7 @@ mnclow = {
 			capitalism = 1
 		NOT = { OR = { has_country_modifier = mnchigh
 			has_country_modifier = mncmedium
-			has_country_modifier = mnclow_gp } }
+			has_country_modifier = mnclow } }
 			}
 		allow = {
 			war = no
