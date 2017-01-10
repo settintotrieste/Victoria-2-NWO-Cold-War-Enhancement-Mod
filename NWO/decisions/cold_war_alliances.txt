@@ -318,7 +318,7 @@ leave_nam_bloc_comm = {
 				}
 				add_country_modifier = {
 					name = alliance_nato
-					duration = 3650
+					duration = -1
 				}
 			}
 		ai_will_do = {
@@ -354,6 +354,14 @@ leave_nam_bloc_comm = {
 
 			effect = {
 				remove_country_modifier = alliance_nato
+				
+			remove_country_modifier = natohigh
+			remove_country_modifier = natomedium
+			remove_country_modifier = natolow
+			clr_country_flag = natohigh
+			clr_country_flag = natomedium
+			clr_country_flag = natolow
+
 				add_country_modifier = {
 					name = leave_alliance_nato
 					duration = 3650
@@ -395,7 +403,7 @@ leave_nam_bloc_comm = {
 			}
 
 			allow = {
-				has_unclaimed_cores = no
+				#has_unclaimed_cores = no
 				NOT =  {
 					has_country_modifier = rio_pact
 					has_country_modifier = leave_rio_pact
@@ -455,7 +463,7 @@ leave_nam_bloc_comm = {
 					in_sphere = USA
 				}
 				OR = { 
-					has_unclaimed_cores = yes
+					
 					NOT = { OR = { government = democracy government = hms_government } }
 					NOT = { relation = { who = USA value = -100 } }
 				}
@@ -496,7 +504,7 @@ leave_nam_bloc_comm = {
 			}
 
 			allow = {
-				has_unclaimed_cores = no
+				#has_unclaimed_cores = no
 				OR = {
 					tag = RUS
 					continent = europe
@@ -556,7 +564,7 @@ leave_nam_bloc_comm = {
 					in_sphere = RUS
 				}
 				OR = { 
-					has_unclaimed_cores = yes
+					
 					NOT = { government = proletarian_dictatorship }
 					NOT = { relation = { who = RUS value = -100 } }
 				}
@@ -600,7 +608,7 @@ leave_nam_bloc_comm = {
 			}
 
 			allow = {
-				OR = { has_unclaimed_cores = no tag = RUS tag = KAZ }
+				OR = { tag = RUS tag = KAZ }
 				OR = { in_sphere = RUS tag = RUS }
 				OR = { tag = RUS  relation = { who = RUS value = 50 } }
 				OR = { tag = RUS RUS = {  has_country_modifier = csto_alliance } }
@@ -645,8 +653,8 @@ leave_nam_bloc_comm = {
 					in_sphere = RUS
 				}
 				OR = { 
-					has_unclaimed_cores = yes
-					government = proletarian_dictatorship
+					
+				government = proletarian_dictatorship
 					NOT = { relation = { who = RUS value = -100 } }
 				}
 			}
@@ -685,7 +693,7 @@ leave_nam_bloc_comm = {
 			}
 
 			allow = {
-				has_unclaimed_cores = no
+				#has_unclaimed_cores = no
 				NOT =  {
 					has_country_modifier = anzus_alliance
 					has_country_modifier = leave_anzus_alliance
@@ -749,7 +757,7 @@ leave_nam_bloc_comm = {
 					in_sphere = USA
 				}
 				OR = { 
-					has_unclaimed_cores = yes
+					
 					NOT = { OR = { government = democracy government = hms_government } }
 					NOT = { relation = { who = USA value = -100 } }
 				}
@@ -840,7 +848,7 @@ leave_nam_bloc_comm = {
 					in_sphere = CHI
 				}
 				OR = { 
-					has_unclaimed_cores = yes
+					
 					NOT = { relation = { who = CHI value = -100 } }
 				}
 			}

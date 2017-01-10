@@ -160,7 +160,7 @@ country_event = {
 	trigger = {
 		ai = no # in an multi player env this may fire multiple times but no worry as it only sets flags
 		NOT = { has_global_flag = blocsenabled }
-		
+		NOT = { year = 1991 }
 		RUS = { government = proletarian_dictatorship }
 		USA = { government = democracy }
 	}
@@ -309,7 +309,7 @@ country_event = {
 		
 		NOT = { has_country_flag = cold_warussr1 }
 		has_global_flag = blocsenabled
-		ai = no
+		
 	}
 
 	immediate = {
@@ -338,7 +338,7 @@ country_event = {
 		
 		NOT = { has_country_flag = cold_warusa1 }
 		has_global_flag = blocsenabled
-		ai = no
+		
 	}
 
 	immediate = {

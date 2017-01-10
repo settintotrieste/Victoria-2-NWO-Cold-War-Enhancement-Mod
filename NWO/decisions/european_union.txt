@@ -270,7 +270,7 @@ duration = -1 }
 
 		allow = {
 			OR = { government = democracy government = hms_government }
-			has_country_modifier = bretton_system
+			#has_country_modifier = bretton_system
 			trust_busting = 1
 		}
 

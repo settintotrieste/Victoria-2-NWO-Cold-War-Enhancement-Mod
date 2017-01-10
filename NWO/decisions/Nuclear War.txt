@@ -15,7 +15,7 @@ NOT = { has_country_modifier = nukes_used_recently }
 	}
 
 effect = {
-any_country = { limit = { war_with = THIS } country_event = 1331432 } 
+any_country = { limit = { war_with = THIS NOT = { has_country_modifier = sdi_completed } } country_event = 1331432 } 
 add_country_modifier = { name = nukes_used_recently duration = 365 }
 badboy = 20
 		}
@@ -39,7 +39,7 @@ OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nati
 	}
 
 effect = {
-random_country = { limit = { war_with = THIS has_country_modifier = nukes_used_recently }
+random_country = { limit = { war_with = THIS has_country_modifier = nukes_used_recently NOT = { has_country_modifier = sdi_completed } }
 
 any_pop = { reduce_pop = -0.20 }
 
@@ -80,7 +80,7 @@ OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nati
 	}
 
 effect = {
-random_country = { limit = { war_with = THIS has_country_modifier = nukes_used_recently }
+random_country = { limit = { war_with = THIS has_country_modifier = nukes_used_recently NOT = { has_country_modifier = sdi_completed } }
 
 any_pop = { reduce_pop = -0.1 }
 
@@ -117,7 +117,7 @@ OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nati
 	}
 
 effect = {
-random_country = { limit = { war_with = THIS has_country_modifier = nukes_used_recently }
+random_country = { limit = { war_with = THIS has_country_modifier = nukes_used_recently NOT = { has_country_modifier = sdi_completed } }
 
 any_pop = { reduce_pop = -0.05 }
 
