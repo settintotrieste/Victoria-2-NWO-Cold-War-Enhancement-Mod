@@ -1401,7 +1401,7 @@ early_backbone = {
 }
 modern_backbone = {
 	area = tech_infrastructure
-	year = 1992
+	year = 1995
 	cost = 12600
 
 	max_railroad = 1

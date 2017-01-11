@@ -66,7 +66,10 @@ AND = { relation = { who = USA value = -100 } }
 		effect = {
 		prestige = 50
 country_event = 1400051
+
 any_country = { limit = { NOT = { has_country_modifier = opecmember } } add_country_modifier = { name = oil_crisis_chaos duration = 365 } relation = { who = THIS value = -200 } }
+
+any_owned = { limit = { trade_goods = petroleum } add_province_modifier = { name = oil_crisis duration = 365 } } 
 
 any_country = { limit = { has_country_modifier = opecmember } relation = { who = THIS value = -50 } }
 

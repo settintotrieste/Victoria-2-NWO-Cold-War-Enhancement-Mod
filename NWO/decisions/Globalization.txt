@@ -195,6 +195,7 @@ political_decisions = {
 	bretton_system = {
 		picture = "bretton_system"
 		potential = {
+NOT = { year = 1992 }
 NOT = { has_global_flag = end_of_bretton_system }
 			NOT = { has_country_modifier = comecon }
 	NOT = { has_country_modifier = bretton_system_excluded }

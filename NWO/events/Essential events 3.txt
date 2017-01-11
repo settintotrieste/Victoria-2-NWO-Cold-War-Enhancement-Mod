@@ -456,6 +456,8 @@ country_event = {
 	trigger = {
 		war = no
 		crisis_exists = no
+		NOT = { has_country_modifier = cold_war_medium }
+		NOT = { has_country_modifier = cold_war_high }
 		OR = { 
 		NOT = { has_country_modifier = defcon5 }
 		has_country_modifier = defcon1
@@ -483,8 +485,9 @@ country_event = {
 
 	trigger = {
 		war = no
-		involved_in_crisis = yes
-		NOT = { crisis_temperature = 90 }
+		#involved_in_crisis = yes
+		#NOT = { crisis_temperature = 90 }
+		has_country_modifier = cold_war_medium
 		NOT = { has_country_modifier = defcon4 }
 		}
 	
@@ -506,8 +509,9 @@ country_event = {
 
 	trigger = {
 		war = no
-		involved_in_crisis = yes
-		crisis_temperature = 90
+		#involved_in_crisis = yes
+		#crisis_temperature = 90
+		has_country_modifier = cold_war_high
 		NOT = { has_country_modifier = defcon3 }
 		}
 	
@@ -550,7 +554,7 @@ country_event = {
 
 	trigger = {
 		war = yes
-		national_provinces_occupied = 0.35
+		national_provinces_occupied = 0.40
 		NOT = { has_country_modifier = defcon1 }
 		}
 	

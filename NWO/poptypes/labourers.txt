@@ -436,7 +436,7 @@ ideologies = {
 	socialist = { # pragmatic social reformist
 		factor = 1
 		# type
-		modifier = { factor = 4 OR = { type = craftsmen type = labourers } NOT = { militancy = 2 } }
+		modifier = { factor = 2 OR = { type = craftsmen type = labourers } NOT = { militancy = 2 } }
 		modifier = { factor = 0.1 OR = { type = soldiers type = officers type = aristocrats } NOT = { ruling_party_ideology = socialist } }
 		# government and ruling_party_ideology
 		modifier = { factor = 4 country = { ruling_party_ideology = socialist } everyday_needs = 0.5 }
